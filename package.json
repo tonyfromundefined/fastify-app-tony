@@ -1,5 +1,5 @@
 {
-  "name": "fastify-app-tony",
+  "name": "@fastify-app-tony/monorepo",
   "private": true,
   "workspaces": [
     "packages/*",
@@ -37,7 +37,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.1.2",
+    "lint-staged": "^13.1.4",
     "prettier": "^2.8.4",
     "typescript": "^4.9.5",
     "ultra-runner": "^3.10.5",

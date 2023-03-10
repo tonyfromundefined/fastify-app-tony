@@ -9,3 +9,12 @@
 # Documentation here: https://yarnpkg.com/features/zero-installs
 !.yarn/cache
 #.pnp.*
+
+# Ultra Runner Cache
+.ultra.cache.json
+
+# Vite Cache
+node_modules
+
+# Build Artifacts
+dist
