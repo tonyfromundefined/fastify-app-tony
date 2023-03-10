@@ -3057,7 +3057,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@vanilla-extract/recipes", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:0.3.0"],\
             ["@vanilla-extract/vite-plugin", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:3.8.0"],\
             ["@vitejs/plugin-react", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:3.1.0"],\
-            ["concurrently", "npm:7.6.0"],\
             ["dotenv-safe", "npm:8.2.0"],\
             ["esbuild", "npm:0.16.17"],\
             ["fastify", "npm:4.14.1"],\
@@ -3080,6 +3079,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["concurrently", "npm:7.6.0"],\
             ["nanobundle", "virtual:6182627bc6ec0e0c5ab00b10eb670fbae1ec1a788ef855b31131906e26632ffbb6fd1e81941f719b759b43b5f88aa6650bb4fd5d479819b367b88efd7d2c5ab3#npm:1.5.0"],\
             ["rimraf", "npm:4.4.0"],\
+            ["ultra-runner", "npm:3.10.5"],\
             ["vite", "virtual:6182627bc6ec0e0c5ab00b10eb670fbae1ec1a788ef855b31131906e26632ffbb6fd1e81941f719b759b43b5f88aa6650bb4fd5d479819b367b88efd7d2c5ab3#npm:4.1.4"],\
             ["vitest", "virtual:6182627bc6ec0e0c5ab00b10eb670fbae1ec1a788ef855b31131906e26632ffbb6fd1e81941f719b759b43b5f88aa6650bb4fd5d479819b367b88efd7d2c5ab3#npm:0.29.2"],\
             ["watchlist", "npm:0.3.1"]\

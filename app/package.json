@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "concurrently \"yarn:build:*\"",
+    "build": "yarn build:client && yarn build:app",
     "build:app": "node ./esbuild.config.mjs",
     "build:client": "vite build --outDir ../../dist/client",
     "clean": "yarn rimraf ./dist && yarn rimraf ./node_modules",
@@ -39,7 +39,6 @@
     "@types/react-dom": "^18.0.11",
     "@vanilla-extract/vite-plugin": "^3.8.0",
     "@vitejs/plugin-react": "^3.1.0",
-    "concurrently": "^7.6.0",
     "esbuild": "^0.16.17",
     "nodemon": "^2.0.21",
     "rimraf": "^4.4.0",
@@ -48,7 +47,8 @@
   },
   "ultra": {
     "concurrent": [
-      "clean"
+      "clean",
+      "build"
     ]
   }
 }

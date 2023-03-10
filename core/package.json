@@ -15,22 +15,23 @@
   "scripts": {
     "build": "nanobundle build",
     "clean": "nanobundle clean && yarn rimraf ./node_modules",
-    "dev": "concurrently \"yarn:dev:*\"",
-    "dev:build": "watchlist src --eager -- yarn build",
+    "dev": "yarn dev:build && yarn dev:test",
+    "dev:build": "yarn watchlist src --eager -- yarn build",
     "dev:test": "vitest ./src",
     "test": "vitest run ./src"
   },
   "devDependencies": {
-    "concurrently": "^7.6.0",
     "nanobundle": "^1.5.0",
     "rimraf": "^4.4.0",
+    "ultra-runner": "^3.10.5",
     "vite": "^4.1.4",
     "vitest": "^0.29.2",
     "watchlist": "^0.3.1"
   },
   "ultra": {
     "concurrent": [
-      "clean"
+      "clean",
+      "dev"
     ]
   }
 }

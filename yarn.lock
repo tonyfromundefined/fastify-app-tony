@@ -1845,7 +1845,6 @@ __metadata:
     "@vanilla-extract/recipes": ^0.3.0
     "@vanilla-extract/vite-plugin": ^3.8.0
     "@vitejs/plugin-react": ^3.1.0
-    concurrently: ^7.6.0
     dotenv-safe: ^8.2.0
     esbuild: ^0.16.17
     fastify: ^4.14.1
@@ -1866,6 +1865,7 @@ __metadata:
     concurrently: ^7.6.0
     nanobundle: ^1.5.0
     rimraf: ^4.4.0
+    ultra-runner: ^3.10.5
     vite: ^4.1.4
     vitest: ^0.29.2
     watchlist: ^0.3.1
