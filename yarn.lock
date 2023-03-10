@@ -1862,7 +1862,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fastify-app-tony/core@workspace:core"
   dependencies:
-    concurrently: ^7.6.0
     nanobundle: ^1.5.0
     rimraf: ^4.4.0
     ultra-runner: ^3.10.5

@@ -3076,7 +3076,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./core/",\
           "packageDependencies": [\
             ["@fastify-app-tony/core", "workspace:core"],\
-            ["concurrently", "npm:7.6.0"],\
             ["nanobundle", "virtual:6182627bc6ec0e0c5ab00b10eb670fbae1ec1a788ef855b31131906e26632ffbb6fd1e81941f719b759b43b5f88aa6650bb4fd5d479819b367b88efd7d2c5ab3#npm:1.5.0"],\
             ["rimraf", "npm:4.4.0"],\
             ["ultra-runner", "npm:3.10.5"],\
