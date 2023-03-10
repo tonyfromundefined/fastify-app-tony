@@ -6,6 +6,7 @@
     "build": "concurrently \"yarn:build:*\"",
     "build:app": "node ./esbuild.config.mjs",
     "build:client": "vite build --outDir ../../dist/client",
+    "clean": "yarn rimraf ./dist && yarn rimraf ./node_modules",
     "dev": "nodemon",
     "start": "NODE_ENV=production node ./dist/index.mjs"
   },
@@ -20,6 +21,7 @@
     "watch": "src"
   },
   "dependencies": {
+    "@fastify-app-tony/core": "workspace:^",
     "@fastify/cookie": "^8.3.0",
     "@fastify/cors": "^8.2.0",
     "@fastify/middie": "^8.1.0",
@@ -40,8 +42,13 @@
     "concurrently": "^7.6.0",
     "esbuild": "^0.16.17",
     "nodemon": "^2.0.21",
+    "rimraf": "^4.4.0",
     "typescript": "^4.9.5",
     "vite": "^4.1.4"
   },
-  "packageManager": "yarn@3.4.1"
+  "ultra": {
+    "concurrent": [
+      "clean"
+    ]
+  }
 }

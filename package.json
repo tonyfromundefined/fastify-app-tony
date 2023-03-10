@@ -13,7 +13,7 @@
     "dev": "ultra -r dev",
     "format": "eslint --fix --ext .js,.json,.ts,.tsx --ignore-path .gitignore .",
     "postinstall": "husky install",
-    "server:build": "yarn ultra -r --filter \"+@jampot/server\" build",
+    "server:build": "yarn ultra -r --filter \"+@fastify-app-tony/app\" build",
     "test": "yarn build && ultra -r test",
     "typecheck": "tsc --noEmit",
     "version": "yarn install && git stage yarn.lock"
