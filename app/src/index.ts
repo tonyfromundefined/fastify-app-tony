@@ -1,4 +1,4 @@
-import "dotenv-safe/config.js";
+import "dotenv-safe-ko/config";
 
 import { makeApp } from "./makeApp";
 
@@ -14,7 +14,7 @@ Promise.resolve()
     })
   )
   .then(() => {
-    console.log(`🚀 Fastify Tony App is listening on http://localhost:${PORT}`);
+    console.log(`🚀 My Application is listening on http://localhost:${PORT}`);
   })
   .catch((err) => {
     console.log(err);

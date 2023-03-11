@@ -1845,7 +1845,7 @@ __metadata:
     "@vanilla-extract/recipes": ^0.3.0
     "@vanilla-extract/vite-plugin": ^3.8.0
     "@vitejs/plugin-react": ^3.1.0
-    dotenv-safe: ^8.2.0
+    dotenv-safe-ko: ^100.0.2
     esbuild: ^0.16.17
     fastify: ^4.14.1
     nodemon: ^2.0.21
@@ -3168,7 +3168,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:5.2.0":
+"chalk@npm:5.2.0, chalk@npm:^5.2.0":
   version: 5.2.0
   resolution: "chalk@npm:5.2.0"
   checksum: 03d8060277de6cf2fd567dc25fcf770593eb5bb85f460ce443e49255a30ff1242edd0c90a06a03803b0466ff0687a939b41db1757bec987113e83de89a003caa
@@ -3662,19 +3662,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dotenv-safe@npm:^8.2.0":
-  version: 8.2.0
-  resolution: "dotenv-safe@npm:8.2.0"
+"dotenv-safe-ko@npm:^100.0.2":
+  version: 100.0.2
+  resolution: "dotenv-safe-ko@npm:100.0.2"
   dependencies:
-    dotenv: ^8.2.0
-  checksum: 8b73770330528d77630009afa44239127c44d634b0fa7d7545932a8e72686d774ceadea62d381ed7c911e0facac4ee1489132e44b746f36eb8f2e3ee6929eb78
+    chalk: ^5.2.0
+    dotenv: ^16.0.3
+  checksum: 9a9f34c2f8403458042af03d6a55d92c0176c69961d1e0562303a2d7a79c82465302c026123254f4167391e6c73328f1b6c25ab43010ef226c64900177f1df61
   languageName: node
   linkType: hard
 
-"dotenv@npm:^8.2.0":
-  version: 8.6.0
-  resolution: "dotenv@npm:8.6.0"
-  checksum: 38e902c80b0666ab59e9310a3d24ed237029a7ce34d976796349765ac96b8d769f6df19090f1f471b77a25ca391971efde8a1ea63bb83111bd8bec8e5cc9b2cd
+"dotenv@npm:^16.0.3":
+  version: 16.0.3
+  resolution: "dotenv@npm:16.0.3"
+  checksum: afcf03f373d7a6d62c7e9afea6328e62851d627a4e73f2e12d0a8deae1cd375892004f3021883f8aec85932cd2834b091f568ced92b4774625b321db83b827f8
   languageName: node
   linkType: hard
 
