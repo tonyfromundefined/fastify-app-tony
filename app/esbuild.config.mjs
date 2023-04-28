@@ -3,8 +3,6 @@ import path from "node:path";
 
 import { build } from "esbuild";
 
-const watch = process.argv.includes("--watch");
-
 const pkg = JSON.parse(
   fs.readFileSync(path.resolve("./package.json"), "utf-8")
 );
@@ -29,7 +27,6 @@ build({
     ".js": ".mjs",
   },
   external,
-  watch,
 }).catch((err) => {
   console.log(err);
   process.exit(1);

@@ -23,27 +23,27 @@
   "dependencies": {
     "@fastify-app-tony/core": "workspace:^",
     "@fastify/cookie": "^8.3.0",
-    "@fastify/cors": "^8.2.0",
+    "@fastify/cors": "^8.2.1",
     "@fastify/middie": "^8.1.0",
-    "@fastify/static": "^6.9.0",
-    "@vanilla-extract/css": "^1.9.5",
-    "@vanilla-extract/recipes": "^0.3.0",
-    "dotenv-safe-ko": "^100.0.2",
-    "fastify": "^4.14.1",
+    "@fastify/static": "^6.10.1",
+    "@vanilla-extract/css": "^1.11.0",
+    "@vanilla-extract/recipes": "^0.4.0",
+    "dotenv-safe-ko": "^100.0.4",
+    "fastify": "^4.17.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.2"
+    "react-router-dom": "^6.10.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.1",
     "@vanilla-extract/vite-plugin": "^3.8.0",
-    "@vitejs/plugin-react": "^3.1.0",
-    "esbuild": "^0.16.17",
-    "nodemon": "^2.0.21",
-    "rimraf": "^4.4.0",
-    "typescript": "^4.9.5",
-    "vite": "^4.1.4"
+    "@vitejs/plugin-react": "^4.0.0",
+    "esbuild": "^0.17.18",
+    "nodemon": "^2.0.22",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.3"
   },
   "ultra": {
     "concurrent": [
