@@ -22,11 +22,11 @@
     "vite": "^4.3.3"
   },
   "devDependencies": {
-    "@types/node": "^18.16.2",
-    "@typescript-eslint/eslint-plugin": "^5.59.1",
-    "@typescript-eslint/parser": "^5.59.1",
+    "@types/node": "^18.16.15",
+    "@typescript-eslint/eslint-plugin": "^5.59.7",
+    "@typescript-eslint/parser": "^5.59.7",
     "concurrently": "^8.0.1",
-    "eslint": "^8.39.0",
+    "eslint": "^8.41.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-config-react-app": "^7.0.1",
@@ -36,7 +36,7 @@
     "prettier": "^2.8.8",
     "typescript": "^5.0.4",
     "ultra-runner": "^3.10.5",
-    "vite": "^4.3.3"
+    "vite": "^4.3.8"
   },
   "packageManager": "yarn@3.5.0"
 }
