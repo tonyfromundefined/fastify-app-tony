@@ -21,7 +21,6 @@
     "watch": "src"
   },
   "dependencies": {
-    "@fastify-app-tony/core": "workspace:^",
     "@fastify/cookie": "^8.3.0",
     "@fastify/cors": "^8.3.0",
     "@fastify/middie": "^8.3.0",

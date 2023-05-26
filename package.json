@@ -3,7 +3,6 @@
   "private": true,
   "workspaces": [
     "packages/*",
-    "core",
     "app"
   ],
   "scripts": {
@@ -18,7 +17,7 @@
     "version": "yarn install && git stage yarn.lock"
   },
   "resolutions": {
-    "esbuild": "^0.16.17",
+    "esbuild": "^0.17",
     "vite": "^4.3.3"
   },
   "devDependencies": {
