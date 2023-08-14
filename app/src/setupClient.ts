@@ -23,7 +23,7 @@ export async function setupClient(app: FastifyInstance) {
       async handler(req, reply) {
         const template = await fs.readFile(
           path.resolve("./src/client/index.html"),
-          "utf-8"
+          "utf-8",
         );
 
         const html = await vite.transformIndexHtml(req.url, template);
@@ -37,7 +37,7 @@ export async function setupClient(app: FastifyInstance) {
   } else {
     const html = await fs.readFile(
       path.resolve("./dist/client/index.html"),
-      "utf-8"
+      "utf-8",
     );
 
     await app.register(FastifyStatic, {
