@@ -61,7 +61,21 @@
     "rimraf": "^5.0.1",
     "typescript": "^5.1.6",
     "vite": "^4.4.9",
+    "vite-plugin-relay-lite": "^0.5.0",
     "vitest": "^0.34.1"
+  },
+  "relay": {
+    "src": "./src/client",
+    "schema": "./src/graphql-api/__generated__/schema.graphql",
+    "language": "typescript",
+    "artifactDirectory": "./src/client/__relay__",
+    "exclude": [
+      "**/node_modules/**",
+      "**/__generated__/**",
+      "**/__relay__/**",
+      "**/test/**"
+    ],
+    "eagerEsModules": true
   },
   "ultra": {
     "concurrent": [

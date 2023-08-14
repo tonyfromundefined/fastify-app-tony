@@ -2987,6 +2987,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rimraf", "npm:5.0.1"],\
             ["typescript", "patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"],\
             ["vite", "virtual:97d6c125e4953f863676c13f32095c70967ce7ac1e1a97ce734dddf2a8613d618200ff18aea561528646e469e20140e8b6ff71d170b495e23147d9c767849c5a#npm:4.4.9"],\
+            ["vite-plugin-relay-lite", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:0.5.0"],\
             ["vitest", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:0.34.1"]\
           ],\
           "linkType": "SOFT"\
@@ -9641,6 +9642,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["kleur", [\
+        ["npm:4.1.5", {\
+          "packageLocation": "./.yarn/cache/kleur-npm-4.1.5-46b6135f41-1dc476e327.zip/node_modules/kleur/",\
+          "packageDependencies": [\
+            ["kleur", "npm:4.1.5"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["language-subtag-registry", [\
         ["npm:0.3.22", {\
           "packageLocation": "./.yarn/cache/language-subtag-registry-npm-0.3.22-e9f79fe04e-8ab70a7e0e.zip/node_modules/language-subtag-registry/",\
@@ -13178,6 +13188,35 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pathe", "npm:1.1.1"],\
             ["picocolors", "npm:1.0.0"],\
             ["vite", "virtual:9b3b8dc82ef62dfa4d36d3288d861e13047b49df907ca9cc5dc3603b813ce591660f6d7cd8e55a1049e654a1f19af3fd4c346944aa02a430bf727ff5341f841b#npm:4.4.9"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["vite-plugin-relay-lite", [\
+        ["npm:0.5.0", {\
+          "packageLocation": "./.yarn/cache/vite-plugin-relay-lite-npm-0.5.0-c026cbf538-d678508917.zip/node_modules/vite-plugin-relay-lite/",\
+          "packageDependencies": [\
+            ["vite-plugin-relay-lite", "npm:0.5.0"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:0.5.0", {\
+          "packageLocation": "./.yarn/__virtual__/vite-plugin-relay-lite-virtual-ebcb1bb7cc/0/cache/vite-plugin-relay-lite-npm-0.5.0-c026cbf538-d678508917.zip/node_modules/vite-plugin-relay-lite/",\
+          "packageDependencies": [\
+            ["vite-plugin-relay-lite", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:0.5.0"],\
+            ["@types/graphql", null],\
+            ["@types/vite", null],\
+            ["cosmiconfig", "npm:8.2.0"],\
+            ["graphql", "npm:16.7.1"],\
+            ["kleur", "npm:4.1.5"],\
+            ["magic-string", "npm:0.30.2"],\
+            ["vite", "virtual:97d6c125e4953f863676c13f32095c70967ce7ac1e1a97ce734dddf2a8613d618200ff18aea561528646e469e20140e8b6ff71d170b495e23147d9c767849c5a#npm:4.4.9"]\
+          ],\
+          "packagePeers": [\
+            "@types/graphql",\
+            "@types/vite",\
+            "graphql",\
+            "vite"\
           ],\
           "linkType": "HARD"\
         }]\
