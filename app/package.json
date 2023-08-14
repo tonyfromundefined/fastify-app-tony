@@ -9,7 +9,8 @@
     "clean": "yarn rimraf ./dist && yarn rimraf ./node_modules",
     "codegen": "graphql-codegen",
     "dev": "nodemon",
-    "start": "NODE_ENV=production node ./dist/index.mjs"
+    "start": "NODE_ENV=production node ./dist/index.mjs",
+    "test": "vitest run ./src -c ./vite.config.test.mjs"
   },
   "nodemonConfig": {
     "exec": "yarn build:app && node ./dist/index.mjs",
@@ -54,7 +55,8 @@
     "nodemon": "^3.0.1",
     "rimraf": "^5.0.1",
     "typescript": "^5.1.6",
-    "vite": "^4.4.9"
+    "vite": "^4.4.9",
+    "vitest": "^0.34.1"
   },
   "ultra": {
     "concurrent": [
