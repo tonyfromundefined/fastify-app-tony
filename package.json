@@ -41,5 +41,18 @@
       "unplugged": true
     }
   },
-  "packageManager": "yarn@3.6.1"
+  "packageManager": "yarn@3.6.1",
+  "relay": {
+    "src": "./src/client",
+    "schema": "./src/graphql-api/__generated__/schema.graphql",
+    "language": "typescript",
+    "artifactDirectory": "./src/client/__relay__",
+    "exclude": [
+      "**/node_modules/**",
+      "**/__generated__/**",
+      "**/__relay__/**",
+      "**/test/**"
+    ],
+    "eagerEsModules": true
+  }
 }

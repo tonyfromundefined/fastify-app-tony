@@ -1731,6 +1731,8 @@ __metadata:
     "@types/node": ^20.5.0
     "@types/react": ^18.2.20
     "@types/react-dom": ^18.2.7
+    "@types/react-relay": ^14.1.4
+    "@types/relay-runtime": ^14.1.12
     "@vanilla-extract/css": ^1.12.0
     "@vanilla-extract/recipes": ^0.5.0
     "@vanilla-extract/vite-plugin": ^3.8.2
@@ -1746,7 +1748,10 @@ __metadata:
     nodemon: ^3.0.1
     react: ^18.2.0
     react-dom: ^18.2.0
+    react-relay: ^15.0.0
     react-router-dom: ^6.15.0
+    relay-compiler: ^15.0.0
+    relay-runtime: ^15.0.0
     rimraf: ^5.0.1
     typescript: ^5.1.6
     vite: ^4.4.9
@@ -2762,6 +2767,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-relay@npm:^14.1.4":
+  version: 14.1.4
+  resolution: "@types/react-relay@npm:14.1.4"
+  dependencies:
+    "@types/react": "*"
+    "@types/relay-runtime": "*"
+  checksum: bff523a5fc0612eb862d6f0767b7a63f0733f56280ac9974905c0abce2647dc30b9e06138634cf1d514542ac6b721a14dfade5a7468be8d32f5a35a6f4785be5
+  languageName: node
+  linkType: hard
+
 "@types/react@npm:*, @types/react@npm:^18.2.20":
   version: 18.2.20
   resolution: "@types/react@npm:18.2.20"
@@ -2770,6 +2785,13 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: 30f699c60e5e4bfef273ce64d320651cdd60f5c6a08361c6c7eca8cebcccda1ac953d2ee57c9f321b5ae87f8a62c72b6d35ca42df0e261d337849952daab2141
+  languageName: node
+  linkType: hard
+
+"@types/relay-runtime@npm:*, @types/relay-runtime@npm:^14.1.12":
+  version: 14.1.12
+  resolution: "@types/relay-runtime@npm:14.1.12"
+  checksum: 531d448e39bbd86ee72de2d4f0990d46b3f931f64214f5011a746ac91e56a1f5216d8f0ebe59736f1619f62062a19f8d348d5a10c2d384d95514d9e93c7b6262
   languageName: node
   linkType: hard
 
@@ -5541,7 +5563,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fbjs@npm:^3.0.0":
+"fbjs@npm:^3.0.0, fbjs@npm:^3.0.2":
   version: 3.0.5
   resolution: "fbjs@npm:3.0.5"
   dependencies:
@@ -8448,6 +8470,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-relay@npm:^15.0.0":
+  version: 15.0.0
+  resolution: "react-relay@npm:15.0.0"
+  dependencies:
+    "@babel/runtime": ^7.0.0
+    fbjs: ^3.0.2
+    invariant: ^2.2.4
+    nullthrows: ^1.1.1
+    relay-runtime: 15.0.0
+  peerDependencies:
+    react: ^16.9.0 || ^17 || ^18
+  checksum: d318c3b153f193e1b93fb5d8501426f7a9eb2e013407cbfadc1cbc17e319d99dad9c145147c0cea194eeb6ffbb4fc6d41914ad69db0d589808d4484e4a6fd718
+  languageName: node
+  linkType: hard
+
 "react-router-dom@npm:^6.15.0":
   version: 6.15.0
   resolution: "react-router-dom@npm:6.15.0"
@@ -8588,6 +8625,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"relay-compiler@npm:^15.0.0":
+  version: 15.0.0
+  resolution: "relay-compiler@npm:15.0.0"
+  bin:
+    relay-compiler: cli.js
+  checksum: 8e452544d17ff433b933d89102e54eb99f8c76de4f0acc414f4a3df8aab73e2355cd40b87f93941af4204fdba98083018b9cca0525ba8e50c94fcf00fd33c886
+  languageName: node
+  linkType: hard
+
 "relay-runtime@npm:12.0.0":
   version: 12.0.0
   resolution: "relay-runtime@npm:12.0.0"
@@ -8596,6 +8642,17 @@ __metadata:
     fbjs: ^3.0.0
     invariant: ^2.2.4
   checksum: 51cdc8a5e04188982452ae4e7c6ac7d6375ee769130d24ce8e8f9cdd45aa7e11ecd68670f56e30dcee1b4974585e88ecce19e69a9868b80cda0db7678c3b8f0a
+  languageName: node
+  linkType: hard
+
+"relay-runtime@npm:15.0.0, relay-runtime@npm:^15.0.0":
+  version: 15.0.0
+  resolution: "relay-runtime@npm:15.0.0"
+  dependencies:
+    "@babel/runtime": ^7.0.0
+    fbjs: ^3.0.2
+    invariant: ^2.2.4
+  checksum: ccf41ac4778b54560ea35901076a00eaa60597a89c908f6fb7b15812b76aad6aa57bfe81fe5af159dd6aaf716eb46208ec6e77cf8357c479d288af6f5a04698d
   languageName: node
   linkType: hard
 
