@@ -11,10 +11,10 @@ Promise.resolve()
     app.listen({
       host: HOST,
       port: PORT,
-    })
+    }),
   )
   .then(() => {
-    console.log(`🚀 My Application is listening on http://localhost:${PORT}`);
+    console.log(`🚀 fastify-app-tony is listening on http://localhost:${PORT}`);
   })
   .catch((err) => {
     console.log(err);
