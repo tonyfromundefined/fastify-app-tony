@@ -1747,6 +1747,7 @@ __metadata:
     mercurius: ^13.1.0
     mongodb: ^5.7.0
     nodemon: ^3.0.1
+    plantae: ^0.1.1
     react: ^18.2.0
     react-dom: ^18.2.0
     react-relay: ^15.0.0
@@ -8249,6 +8250,13 @@ __metadata:
     mlly: ^1.2.0
     pathe: ^1.1.0
   checksum: 4b305c834b912ddcc8a0fe77530c0b0321fe340396f84cbb87aecdbc126606f47f2178f23b8639e71a4870f9631c7217aef52ffed0ae17ea2dbbe7e43d116a6e
+  languageName: node
+  linkType: hard
+
+"plantae@npm:^0.1.1":
+  version: 0.1.1
+  resolution: "plantae@npm:0.1.1"
+  checksum: c3839c83bd7fb1fc0cc1e949245e25bd91f4090f39ecbe3158b51e4a8ec741f2242c7630a54f5c50eeeae702a1cfe0ceb724d0185a3c13c56d1b75509f1c56fe
   languageName: node
   linkType: hard
 

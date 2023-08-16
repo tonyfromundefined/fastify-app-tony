@@ -37,6 +37,7 @@
     "graphql-ws": "^5.14.0",
     "mercurius": "^13.1.0",
     "mongodb": "^5.7.0",
+    "plantae": "^0.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-relay": "^15.0.0",

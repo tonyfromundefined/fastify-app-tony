@@ -15,11 +15,15 @@ $ docker-compose up -d
 $ yarn workspace @fastify-app-tony/app dev
 ```
 
+> Make it your app by doing find and replace all `fastify-app-tony`.
+
 ## 🔨 Tech Stack
 
 It consists of the following technology stacks:
 
 ### Common
+
+Maintaining a stable development speed with fast feedback
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [Vitest](https://vitest.dev/)
@@ -27,6 +31,8 @@ It consists of the following technology stacks:
 - [Prettier](https://prettier.io/)
 
 ### Server
+
+Separation of domain knowledge and scalability using event sourcing.
 
 - [Node.js](https://nodejs.org/)
 - [MongoDB](https://www.mongodb.com/)
@@ -43,9 +49,12 @@ It consists of the following technology stacks:
 
 ### Client
 
+Securing E2E Type Safety and Data-View Consistency using GraphQL.
+
 - [React](https://react.dev/)
 - [React Router](https://reactrouter.com/)
 - [Relay](https://relay.dev/)
+- [Plantae](https://github.com/daangn/plantae)
 - [Vanilla Extract](https://vanilla-extract.style/)
 - [Vite](https://vitejs.dev/)
 

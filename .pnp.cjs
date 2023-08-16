@@ -2979,6 +2979,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mercurius", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:13.1.0"],\
             ["mongodb", "virtual:9bc8f05b43fe48da6416a66a9e899a904cf2f75dd0013f0390bdbdd76228919064ef2e7a73cacbd592d8600f5df1403d66c7b5003f3ef9ca64a21a95bc5e283a#npm:5.7.0"],\
             ["nodemon", "npm:3.0.1"],\
+            ["plantae", "npm:0.1.1"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:18.2.0"],\
             ["react-relay", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:15.0.0"],\
@@ -11107,6 +11108,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jsonc-parser", "npm:3.2.0"],\
             ["mlly", "npm:1.4.0"],\
             ["pathe", "npm:1.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["plantae", [\
+        ["npm:0.1.1", {\
+          "packageLocation": "./.yarn/cache/plantae-npm-0.1.1-889d6a3047-c3839c83bd.zip/node_modules/plantae/",\
+          "packageDependencies": [\
+            ["plantae", "npm:0.1.1"]\
           ],\
           "linkType": "HARD"\
         }]\

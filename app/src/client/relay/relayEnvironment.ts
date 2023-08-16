@@ -1,4 +1,5 @@
 import { createClient as createSubscriptionsClient } from "graphql-ws";
+import { createFetch } from "plantae";
 import type { FetchFunction, SubscribeFunction } from "relay-runtime";
 import {
   Environment,
@@ -12,8 +13,8 @@ const GRAPHQL_ENDPOINT = "/graphql";
 
 const wsProtocol = window.location.protocol === "https:" ? "wss:" : "ws:";
 
-const subscriptionsClient = createSubscriptionsClient({
-  url: `${wsProtocol}//${window.location.host}${GRAPHQL_ENDPOINT}`,
+const fetch = createFetch({
+  client: window.fetch,
 });
 
 const fetchFn: FetchFunction = async (operation, variables, cacheConfig) => {
@@ -31,6 +32,10 @@ const fetchFn: FetchFunction = async (operation, variables, cacheConfig) => {
 
   return result;
 };
+
+const subscriptionsClient = createSubscriptionsClient({
+  url: `${wsProtocol}//${window.location.host}${GRAPHQL_ENDPOINT}`,
+});
 
 const subscribeFn: SubscribeFunction = (operation, variables) => {
   return Observable.create((sink) => {
