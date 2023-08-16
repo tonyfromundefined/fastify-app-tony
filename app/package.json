@@ -30,7 +30,7 @@
     "@graphql-tools/schema": "^10.0.0",
     "@vanilla-extract/css": "^1.12.0",
     "@vanilla-extract/recipes": "^0.5.0",
-    "dotenv-safe-ko": "^100.0.4",
+    "dotenv-safe": "^8.2.0",
     "eventive": "^0.4.0",
     "fastify": "^4.21.0",
     "graphql": "^16.7.1",

@@ -1,4 +1,4 @@
-import "dotenv-safe-ko/config";
+import "dotenv-safe/config";
 
 import { makeApp } from "./makeApp";
 

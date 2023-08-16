@@ -2969,7 +2969,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@vanilla-extract/recipes", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:0.5.0"],\
             ["@vanilla-extract/vite-plugin", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:3.8.2"],\
             ["@vitejs/plugin-react", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:4.0.4"],\
-            ["dotenv-safe-ko", "npm:100.0.4"],\
+            ["dotenv-safe", "npm:8.2.0"],\
             ["esbuild", "npm:0.18.20"],\
             ["eventive", "npm:0.4.0"],\
             ["fastify", "npm:4.21.0"],\
@@ -6078,13 +6078,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["supports-color", "npm:7.2.0"]\
           ],\
           "linkType": "HARD"\
-        }],\
-        ["npm:5.2.0", {\
-          "packageLocation": "./.yarn/cache/chalk-npm-5.2.0-bedd808592-03d8060277.zip/node_modules/chalk/",\
-          "packageDependencies": [\
-            ["chalk", "npm:5.2.0"]\
-          ],\
-          "linkType": "HARD"\
         }]\
       ]],\
       ["change-case", [\
@@ -6820,15 +6813,21 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["dotenv", "npm:16.3.1"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:8.6.0", {\
+          "packageLocation": "./.yarn/cache/dotenv-npm-8.6.0-2ce3e9f7bb-38e902c80b.zip/node_modules/dotenv/",\
+          "packageDependencies": [\
+            ["dotenv", "npm:8.6.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
-      ["dotenv-safe-ko", [\
-        ["npm:100.0.4", {\
-          "packageLocation": "./.yarn/cache/dotenv-safe-ko-npm-100.0.4-47cd44968a-65eef582c0.zip/node_modules/dotenv-safe-ko/",\
+      ["dotenv-safe", [\
+        ["npm:8.2.0", {\
+          "packageLocation": "./.yarn/cache/dotenv-safe-npm-8.2.0-f1bcdebce9-8b73770330.zip/node_modules/dotenv-safe/",\
           "packageDependencies": [\
-            ["dotenv-safe-ko", "npm:100.0.4"],\
-            ["chalk", "npm:5.2.0"],\
-            ["dotenv", "npm:16.3.1"]\
+            ["dotenv-safe", "npm:8.2.0"],\
+            ["dotenv", "npm:8.6.0"]\
           ],\
           "linkType": "HARD"\
         }]\
