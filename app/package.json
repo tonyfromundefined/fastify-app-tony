@@ -34,6 +34,7 @@
     "eventive": "^0.4.0",
     "fastify": "^4.21.0",
     "graphql": "^16.7.1",
+    "graphql-ws": "^5.14.0",
     "mercurius": "^13.1.0",
     "mongodb": "^5.7.0",
     "react": "^18.2.0",
