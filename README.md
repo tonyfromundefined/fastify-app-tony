@@ -11,7 +11,10 @@ $ yarn
 # Bootstrap MongoDB with `docker-compose`
 $ docker-compose up -d
 
-# Start Development Server
+# Create `.env` file
+$ cp ./app/.env.example ./app/.env
+
+# Start development server
 $ yarn workspace @fastify-app-tony/app dev
 ```
 
