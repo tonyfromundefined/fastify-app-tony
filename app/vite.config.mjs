@@ -1,6 +1,7 @@
 import { vanillaExtractPlugin } from "@vanilla-extract/vite-plugin";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
+import relay from "vite-plugin-relay-lite";
 
 export default defineConfig({
   root: "./src/client",
@@ -8,7 +9,7 @@ export default defineConfig({
     sourcemap: true,
     cssCodeSplit: false,
   },
-  plugins: [react(), vanillaExtractPlugin()],
+  plugins: [react(), vanillaExtractPlugin(), relay()],
   define: {
     "process.env": {},
   },

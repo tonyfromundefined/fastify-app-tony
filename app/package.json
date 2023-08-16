@@ -7,8 +7,10 @@
     "build:app": "node ./esbuild.config.mjs",
     "build:client": "vite build --outDir ../../dist/client",
     "clean": "yarn rimraf ./dist && yarn rimraf ./node_modules",
+    "codegen": "graphql-codegen",
     "dev": "nodemon",
-    "start": "NODE_ENV=production node ./dist/index.mjs"
+    "start": "NODE_ENV=production node ./dist/index.mjs",
+    "test": "vitest run ./src -c ./vite.config.test.mjs"
   },
   "nodemonConfig": {
     "exec": "yarn build:app && node ./dist/index.mjs",
@@ -21,28 +23,60 @@
     "watch": "src"
   },
   "dependencies": {
-    "@fastify/cookie": "^8.3.0",
+    "@fastify/cookie": "^9.0.4",
     "@fastify/cors": "^8.3.0",
     "@fastify/middie": "^8.3.0",
     "@fastify/static": "^6.10.2",
-    "@vanilla-extract/css": "^1.11.0",
-    "@vanilla-extract/recipes": "^0.4.0",
+    "@graphql-tools/schema": "^10.0.0",
+    "@vanilla-extract/css": "^1.12.0",
+    "@vanilla-extract/recipes": "^0.5.0",
     "dotenv-safe-ko": "^100.0.4",
-    "fastify": "^4.17.0",
+    "eventive": "^0.4.0",
+    "fastify": "^4.21.0",
+    "graphql": "^16.7.1",
+    "graphql-ws": "^5.14.0",
+    "mercurius": "^13.1.0",
+    "mongodb": "^5.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.11.2"
+    "react-relay": "^15.0.0",
+    "react-router-dom": "^6.15.0",
+    "relay-runtime": "^15.0.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.7",
-    "@types/react-dom": "^18.2.4",
+    "@graphql-codegen/cli": "^5.0.0",
+    "@graphql-codegen/schema-ast": "^4.0.0",
+    "@graphql-codegen/typescript": "^4.0.1",
+    "@graphql-codegen/typescript-resolvers": "^4.0.1",
+    "@types/node": "^20.5.0",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "@types/react-relay": "^14.1.4",
+    "@types/relay-runtime": "^14.1.12",
     "@vanilla-extract/vite-plugin": "^3.8.2",
-    "@vitejs/plugin-react": "^4.0.0",
-    "esbuild": "^0.17.19",
-    "nodemon": "^2.0.22",
+    "@vitejs/plugin-react": "^4.0.4",
+    "esbuild": "^0.19.2",
+    "graphql-codegen-typescript-resolvers-define": "^0.2.0",
+    "nodemon": "^3.0.1",
+    "relay-compiler": "^15.0.0",
     "rimraf": "^5.0.1",
-    "typescript": "^5.0.4",
-    "vite": "^4.3.8"
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9",
+    "vite-plugin-relay-lite": "^0.5.0",
+    "vitest": "^0.34.1"
+  },
+  "relay": {
+    "src": "./src/client",
+    "schema": "./src/graphql-api/__generated__/schema.graphql",
+    "language": "typescript",
+    "artifactDirectory": "./src/client/__relay__",
+    "exclude": [
+      "**/node_modules/**",
+      "**/__generated__/**",
+      "**/__relay__/**",
+      "**/test/**"
+    ],
+    "eagerEsModules": true
   },
   "ultra": {
     "concurrent": [

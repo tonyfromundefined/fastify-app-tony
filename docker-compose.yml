@@ -1,0 +1,14 @@
+version: "3"
+services:
+  db:
+    image: mongo:latest
+    container_name: fastify-app-tony-mongo
+    restart: always
+    ports:
+      - 10007:27017
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=fastify-app-tony
+      - MONGO_INITDB_ROOT_PASSWORD=password
+      - MONGO_INITDB_DATABASE=fastify-app-tony
+    volumes:
+      - ./.mongo:/data/db
