@@ -8,6 +8,7 @@ import { env } from "./env";
 import { makeUserRepository } from "./repositories";
 import { setupClient } from "./setupClient";
 import { setupGraphQLApi } from "./setupGraphQLApi";
+import { setupRestfulApi } from "./setupRestfulApi";
 
 export async function makeApp() {
   /**
@@ -65,6 +66,13 @@ export async function makeApp() {
   await setupGraphQLApi(app, {
     userRepository,
   });
+
+  /**
+   * Setup RESTful API
+   *
+   * GET  /api/*
+   */
+  await setupRestfulApi(app);
 
   /**
    * Waiting for Fastify Plugins...

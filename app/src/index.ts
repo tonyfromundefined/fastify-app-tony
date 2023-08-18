@@ -1,4 +1,4 @@
-import "dotenv-safe/config";
+import "dotenv-safe/config.js";
 
 import { makeApp } from "./makeApp";
 
