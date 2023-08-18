@@ -1,2 +1,2 @@
-export * from "./appRouter";
+export * from "./makeAppRouter";
 export * from "./makeOpenApiSpecification";

@@ -16,7 +16,7 @@ const config: CodegenConfig = {
         "graphql-codegen-typescript-resolvers-define",
       ],
       config: {
-        contextType: "../defineContext#Context",
+        contextType: "../../defineContext#Context",
         mapperTypeSuffix: "Type",
         enumsAsTypes: true,
       },

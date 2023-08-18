@@ -1,15 +1,22 @@
 import type { FastifyInstance } from "fastify";
 import Mercurius from "mercurius";
 
-import { defineContext, makeSchema } from "./api-graphql";
-import type { UserRepository } from "./repositories";
+import { makeSchema } from "./api-graphql";
+import type { UserRepository } from "./core/entities/User";
+import { defineContext } from "./defineContext";
 
 export async function setupGraphQLApi(
   app: FastifyInstance,
-  { userRepository }: { userRepository: UserRepository },
+  {
+    userRepository,
+  }: {
+    userRepository: UserRepository;
+  },
 ) {
+  const schema = makeSchema();
+
   await app.register(Mercurius, {
-    schema: makeSchema(),
+    schema,
     graphiql: true,
     context() {
       return defineContext({

@@ -1,9 +1,9 @@
 import * as z from "zod";
 
-import { t } from "./trpc";
+import { t } from "../trpc";
 
-export const appRouter = t.router({
-  ping: t.procedure
+export const pingRouter = t.router({
+  getPing: t.procedure
     .meta({
       openapi: {
         method: "GET",
@@ -29,7 +29,7 @@ export const appRouter = t.router({
     .meta({
       openapi: {
         method: "POST",
-        path: "/create-ping",
+        path: "/ping/create",
       },
     })
     .input(

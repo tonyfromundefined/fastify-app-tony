@@ -1,4 +1,4 @@
-import type { UserRepository } from "../repositories";
+import type { UserRepository } from "./core/entities/User";
 
 export type Context = {
   repositories: {

@@ -8,7 +8,7 @@ import { env } from "./env";
 import { makeUserRepository } from "./repositories";
 import { setupClient } from "./setupClient";
 import { setupGraphQLApi } from "./setupGraphQLApi";
-import { setupRestfulApi } from "./setupRestfulApi";
+import { setupRestApi } from "./setupRestApi";
 
 export async function makeApp() {
   /**
@@ -42,11 +42,9 @@ export async function makeApp() {
   app.route({
     url: "/healthz",
     method: "GET",
-    handler() {
-      return {
-        ok: true,
-      };
-    },
+    handler: () => ({
+      ok: true,
+    }),
   });
 
   /**
@@ -68,11 +66,15 @@ export async function makeApp() {
   });
 
   /**
-   * Setup RESTful API
+   * Setup REST API
    *
    * GET  /api/*
+   * GET  /api/spec.json
+   * GET  /api/docs
    */
-  await setupRestfulApi(app);
+  await setupRestApi(app, {
+    userRepository,
+  });
 
   /**
    * Waiting for Fastify Plugins...

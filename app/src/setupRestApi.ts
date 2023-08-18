@@ -2,14 +2,35 @@ import type { FastifyInstance } from "fastify";
 import { fastifyTRPCOpenApiPlugin } from "trpc-openapi";
 import { dedent } from "ts-dedent";
 
-import { appRouter, makeOpenApiSpecification } from "./api-restful";
+import { makeAppRouter, makeOpenApiSpecification } from "./api-rest";
+import type { CreateContext } from "./api-rest/trpc";
+import type { UserRepository } from "./core/entities/User";
+import { defineContext } from "./defineContext";
 
-export async function setupRestfulApi(app: FastifyInstance) {
+export async function setupRestApi(
+  app: FastifyInstance,
+  {
+    userRepository,
+  }: {
+    userRepository: UserRepository;
+  },
+) {
   const prefix = "/api";
+
+  const appRouter = makeAppRouter();
+
+  const createContext: CreateContext = async () => {
+    return defineContext({
+      repositories: {
+        user: userRepository,
+      },
+    });
+  };
 
   await app.register(fastifyTRPCOpenApiPlugin, {
     prefix,
     router: appRouter,
+    createContext,
   });
 
   /**
@@ -27,6 +48,7 @@ export async function setupRestfulApi(app: FastifyInstance) {
 
       const openapiSpecification = makeOpenApiSpecification({
         baseUrl: origin,
+        appRouter,
       });
 
       return openapiSpecification;
