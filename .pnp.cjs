@@ -2960,6 +2960,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@graphql-codegen/typescript", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:4.0.1"],\
             ["@graphql-codegen/typescript-resolvers", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:4.0.1"],\
             ["@graphql-tools/schema", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:10.0.0"],\
+            ["@paralleldrive/cuid2", "npm:2.2.2"],\
             ["@trpc/server", "npm:10.37.1"],\
             ["@types/node", "npm:20.5.0"],\
             ["@types/react", "npm:18.2.20"],\
