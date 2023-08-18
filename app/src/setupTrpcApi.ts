@@ -1,13 +1,17 @@
+import { fastifyTRPCPlugin } from "@trpc/server/adapters/fastify";
 import type { FastifyInstance } from "fastify";
 import { fastifyTRPCOpenApiPlugin } from "trpc-openapi";
 import { dedent } from "ts-dedent";
 
-import { makeAppRouter, makeOpenApiSpecification } from "./api-rest";
-import type { CreateContext } from "./api-rest/trpc";
+import { makeAppRouter, makeOpenApiSpecification } from "./api-trpc";
+import type { CreateContext } from "./api-trpc/trpc";
 import type { UserRepository } from "./core/entities/User";
 import { defineContext } from "./defineContext";
 
-export async function setupRestApi(
+const TRPC_PREFIX = "/trpc";
+const API_PREFIX = "/api";
+
+export async function setupTrpcApi(
   app: FastifyInstance,
   {
     userRepository,
@@ -15,8 +19,9 @@ export async function setupRestApi(
     userRepository: UserRepository;
   },
 ) {
-  const prefix = "/api";
-
+  /**
+   * Setup tRPC Endpoints
+   */
   const appRouter = makeAppRouter();
 
   const createContext: CreateContext = async () => {
@@ -27,8 +32,19 @@ export async function setupRestApi(
     });
   };
 
+  await app.register(fastifyTRPCPlugin, {
+    prefix: TRPC_PREFIX,
+    trpcOptions: {
+      router: appRouter,
+      createContext,
+    },
+  });
+
+  /**
+   * Setup REST API Endpoints
+   */
   await app.register(fastifyTRPCOpenApiPlugin, {
-    prefix,
+    prefix: API_PREFIX,
     router: appRouter,
     createContext,
   });
@@ -39,12 +55,12 @@ export async function setupRestApi(
    */
   app.route({
     method: "GET",
-    url: `${prefix}/spec.json`,
+    url: `${API_PREFIX}/spec.json`,
     handler(req) {
       const protocol = req.headers["x-forwarded-proto"] ?? req.protocol;
       const hostname = req.headers["x-forwarded-host"] ?? req.hostname;
 
-      const origin = `${protocol}://${hostname}${prefix}`;
+      const origin = `${protocol}://${hostname}${API_PREFIX}`;
 
       const openapiSpecification = makeOpenApiSpecification({
         baseUrl: origin,
@@ -61,7 +77,7 @@ export async function setupRestApi(
    */
   app.route({
     method: "GET",
-    url: `${prefix}/docs`,
+    url: `${API_PREFIX}/docs`,
     handler(req, reply) {
       /**
        * https://github.com/stoplightio/elements#web-component
@@ -79,7 +95,7 @@ export async function setupRestApi(
           </head>
           <body>
             <elements-api
-              apiDescriptionUrl="${prefix}/spec.json"
+              apiDescriptionUrl="${API_PREFIX}/spec.json"
               router="hash"
               layout="sidebar"
             />

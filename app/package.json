@@ -29,6 +29,7 @@
     "@fastify/static": "^6.10.2",
     "@graphql-tools/schema": "^10.0.0",
     "@paralleldrive/cuid2": "^2.2.2",
+    "@trpc/client": "^10.37.1",
     "@trpc/server": "^10.37.1",
     "@vanilla-extract/css": "^1.12.0",
     "@vanilla-extract/recipes": "^0.5.0",

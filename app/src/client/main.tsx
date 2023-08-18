@@ -1,4 +1,5 @@
 import "./styles/global.css";
+import "./_shims";
 
 import ReactDOM from "react-dom/client";
 

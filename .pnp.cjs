@@ -2961,6 +2961,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@graphql-codegen/typescript-resolvers", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:4.0.1"],\
             ["@graphql-tools/schema", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:10.0.0"],\
             ["@paralleldrive/cuid2", "npm:2.2.2"],\
+            ["@trpc/client", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:10.37.1"],\
             ["@trpc/server", "npm:10.37.1"],\
             ["@types/node", "npm:20.5.0"],\
             ["@types/react", "npm:18.2.20"],\
@@ -4395,11 +4396,34 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@trpc/client", [\
+        ["npm:10.37.1", {\
+          "packageLocation": "./.yarn/cache/@trpc-client-npm-10.37.1-d3a1a81c57-82fefed087.zip/node_modules/@trpc/client/",\
+          "packageDependencies": [\
+            ["@trpc/client", "npm:10.37.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:10.37.1", {\
+          "packageLocation": "./.yarn/__virtual__/@trpc-client-virtual-918564ae1c/0/cache/@trpc-client-npm-10.37.1-d3a1a81c57-82fefed087.zip/node_modules/@trpc/client/",\
+          "packageDependencies": [\
+            ["@trpc/client", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:10.37.1"],\
+            ["@trpc/server", "npm:10.37.1"],\
+            ["@types/trpc__server", null]\
+          ],\
+          "packagePeers": [\
+            "@trpc/server",\
+            "@types/trpc__server"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@trpc/server", [\
         ["npm:10.37.1", {\
           "packageLocation": "./.yarn/cache/@trpc-server-npm-10.37.1-ee700ffdf6-0945bc60e1.zip/node_modules/@trpc/server/",\
           "packageDependencies": [\
-            ["@trpc/server", "npm:10.37.1"]\
+            ["@trpc/server", "npm:10.37.1"],\
+            ["fastify", "npm:4.21.0"]\
           ],\
           "linkType": "HARD"\
         }]\

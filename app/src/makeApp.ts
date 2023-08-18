@@ -8,7 +8,7 @@ import { env } from "./env";
 import { makeUserRepository } from "./repositories";
 import { setupClient } from "./setupClient";
 import { setupGraphQLApi } from "./setupGraphQLApi";
-import { setupRestApi } from "./setupRestApi";
+import { setupTrpcApi } from "./setupTrpcApi";
 
 export async function makeApp() {
   /**
@@ -66,13 +66,13 @@ export async function makeApp() {
   });
 
   /**
-   * Setup REST API
+   * Setup tRPC API
    *
    * GET  /api/*
    * GET  /api/spec.json
    * GET  /api/docs
    */
-  await setupRestApi(app, {
+  await setupTrpcApi(app, {
     userRepository,
   });
 

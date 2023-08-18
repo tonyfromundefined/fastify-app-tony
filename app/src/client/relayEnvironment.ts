@@ -1,5 +1,4 @@
 import { createClient as createSubscriptionsClient } from "graphql-ws";
-import { createFetch } from "plantae";
 import type { FetchFunction, SubscribeFunction } from "relay-runtime";
 import {
   Environment,
@@ -12,10 +11,6 @@ import {
 const GRAPHQL_ENDPOINT = "/graphql";
 
 const wsProtocol = window.location.protocol === "https:" ? "wss:" : "ws:";
-
-const fetch = createFetch({
-  client: window.fetch,
-});
 
 const fetchFn: FetchFunction = async (operation, variables, cacheConfig) => {
   const result = await fetch(GRAPHQL_ENDPOINT, {
