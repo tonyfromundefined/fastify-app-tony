@@ -1,34 +1,24 @@
-import type { BaseDomainEvent, BaseReducer } from "eventive";
+import type { BaseDomainEvent, BaseReducer, Eventive } from "eventive";
+
+export enum UserEventName {
+  Created = "user.created",
+  Deleted = "user.deleted",
+}
 
 export type UserEvent =
   | BaseDomainEvent<
-      "created",
+      UserEventName.Created,
       {
         email: string;
       }
     >
-  | BaseDomainEvent<"deleted", {}>;
+  | BaseDomainEvent<UserEventName.Deleted, {}>;
 
 export type UserState = {
   email: string;
   deletedAt?: string;
 };
 
-export const userReducer: BaseReducer<UserEvent, UserState> = (
-  prevState,
-  event,
-) => {
-  switch (event.eventName) {
-    case "created": {
-      return {
-        email: event.body.email,
-      };
-    }
-    case "deleted": {
-      return {
-        ...prevState,
-        deletedAt: event.eventCreatedAt,
-      };
-    }
-  }
-};
+export type UserReducer = BaseReducer<UserEvent, UserState>;
+
+export type UserRepository = Eventive<UserEvent, UserState>;
