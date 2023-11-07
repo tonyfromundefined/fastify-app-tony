@@ -20,26 +20,15 @@
     "esbuild": "^0.18"
   },
   "devDependencies": {
-    "@types/node": "^20.5.0",
-    "@typescript-eslint/eslint-plugin": "^5.59.7",
-    "@typescript-eslint/parser": "^5.59.7",
-    "concurrently": "^8.2.0",
-    "eslint": "^8.41.0",
-    "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-config-react-app": "^7.0.1",
-    "eslint-plugin-json-format": "^2.0.1",
-    "eslint-plugin-prettier": "^5.0.0",
-    "eslint-plugin-simple-import-sort": "^10.0.0",
-    "prettier": "^3.0.1",
-    "typescript": "^5.1.6",
+    "@types/node": "^20.8.10",
+    "@types/react": "^18.2.36",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.53.0",
+    "eslint-config-tonyfromundefined": "^0.5.0",
+    "react": "^18.2.0",
+    "typescript": "^5.2.2",
     "ultra-runner": "^3.10.5",
-    "vite": "^4.4.9"
+    "vite": "^4.5.0"
   },
-  "dependenciesMeta": {
-    "prettier@3.0.1": {
-      "unplugged": true
-    }
-  },
-  "packageManager": "yarn@3.6.1"
+  "packageManager": "yarn@4.0.1"
 }

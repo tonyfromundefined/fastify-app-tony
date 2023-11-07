@@ -1,6 +1,7 @@
-import { initTRPC } from "@trpc/server";
 import type { CreateFastifyContextOptions } from "@trpc/server/adapters/fastify";
 import type { OpenApiMeta } from "trpc-openapi";
+
+import { initTRPC } from "@trpc/server";
 
 import type { Context } from "../defineContext";
 

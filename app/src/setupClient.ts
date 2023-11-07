@@ -1,5 +1,6 @@
-import FastifyStatic from "@fastify/static";
 import type { FastifyInstance } from "fastify";
+
+import FastifyStatic from "@fastify/static";
 import fs from "fs/promises";
 import path from "path";
 import { createServer } from "vite";
@@ -9,17 +10,15 @@ const DEV = process.env.NODE_ENV !== "production";
 export async function setupClient(app: FastifyInstance) {
   if (DEV) {
     const vite = await createServer({
+      appType: "custom",
       server: {
         middlewareMode: true,
       },
-      appType: "custom",
     });
 
     app.use(vite.middlewares);
 
     app.route({
-      url: "*",
-      method: "GET",
       async handler(req, reply) {
         const template = await fs.readFile(
           path.resolve("./src/client/index.html"),
@@ -33,6 +32,8 @@ export async function setupClient(app: FastifyInstance) {
         reply.header("Cache-Control", "public, max-age=0, must-revalidate");
         reply.send(html);
       },
+      method: "GET",
+      url: "*",
     });
   } else {
     const html = await fs.readFile(
@@ -41,20 +42,20 @@ export async function setupClient(app: FastifyInstance) {
     );
 
     await app.register(FastifyStatic, {
-      prefix: "/assets/",
       maxAge: "14 days",
+      prefix: "/assets/",
       root: path.resolve("./dist/client/assets"),
     });
 
     app.route({
-      url: "*",
-      method: "GET",
       handler(req, reply) {
         reply.status(200);
         reply.header("Content-Type", "text/html");
         reply.header("Cache-Control", "public, max-age=0, must-revalidate");
         reply.send(html);
       },
+      method: "GET",
+      url: "*",
     });
   }
 }

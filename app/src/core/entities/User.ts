@@ -15,8 +15,8 @@ export type UserEvent =
   | BaseDomainEvent<UserEventName.Deleted, {}>;
 
 export type UserState = {
-  email: string;
   deletedAt?: string;
+  email: string;
 };
 
 export type UserReducer = BaseReducer<UserEvent, UserState>;

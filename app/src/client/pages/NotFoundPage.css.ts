@@ -5,8 +5,8 @@ import { utils } from "../styles";
 export const container = style([
   utils.flexColumn,
   {
-    height: "100%",
     alignItems: "stretch",
+    height: "100%",
   },
 ]);
 

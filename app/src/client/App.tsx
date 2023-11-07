@@ -10,8 +10,8 @@ export default function App() {
     <RelayEnvironmentProvider environment={relayEnvironment}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="*" element={<NotFoundPage />} />
+          <Route element={<HomePage />} path="/" />
+          <Route element={<NotFoundPage />} path="*" />
         </Routes>
       </BrowserRouter>
     </RelayEnvironmentProvider>

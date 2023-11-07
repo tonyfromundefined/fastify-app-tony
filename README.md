@@ -31,7 +31,7 @@ Maintaining a stable development speed with fast feedback
 - [TypeScript](https://www.typescriptlang.org/)
 - [Vitest](https://vitest.dev/)
 - [ESLint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
+  - [eslint-config-tonyfromundefined](https://github.com/tonyfromundefined/eslint-config-tonyfromundefined)
 
 ### Server
 

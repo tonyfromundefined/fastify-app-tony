@@ -1,5 +1,6 @@
-import { createTestEvent } from "../test-utils";
 import type { UserEvent } from "./User";
+
+import { createTestEvent } from "../test-utils";
 import { UserEventName } from "./User";
 import { reducer } from "./User.reducer";
 
@@ -9,12 +10,12 @@ const entityName = "User";
 test("User.created", () => {
   const events: UserEvent[] = [
     createTestEvent({
-      entityId,
-      entityName,
-      eventName: UserEventName.Created,
       body: {
         email: "tony@daangn.com",
       },
+      entityId,
+      entityName,
+      eventName: UserEventName.Created,
     }),
   ];
 
@@ -28,25 +29,25 @@ test("User.created", () => {
 test("User.deleted", () => {
   const events: UserEvent[] = [
     createTestEvent({
-      entityId,
-      entityName,
-      eventName: UserEventName.Created,
       body: {
         email: "tony@daangn.com",
       },
+      entityId,
+      entityName,
+      eventName: UserEventName.Created,
     }),
     createTestEvent({
+      body: {},
       entityId,
       entityName,
       eventName: UserEventName.Deleted,
-      body: {},
     }),
   ];
 
   const state = events.reduce(reducer, null as any);
 
   expect(state).toStrictEqual({
-    email: "tony@daangn.com",
     deletedAt: events[1].eventCreatedAt,
+    email: "tony@daangn.com",
   });
 });

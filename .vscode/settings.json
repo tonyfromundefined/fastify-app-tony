@@ -4,11 +4,13 @@
     "**/.yarn": true,
     "**/.pnp.*": true
   },
-  "eslint.nodePath": ".yarn/sdks",
-  "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
+
+  // TypeScript
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
+  
   // ESLint
+  "eslint.nodePath": ".yarn/sdks",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
@@ -18,5 +20,5 @@
     "typescript",
     "typescriptreact",
     "json"
-  ]
+  ],
 }

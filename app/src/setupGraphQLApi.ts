@@ -1,8 +1,10 @@
 import type { FastifyInstance } from "fastify";
+
 import Mercurius from "mercurius";
 
-import { makeSchema } from "./api-graphql";
 import type { UserRepository } from "./core/entities/User";
+
+import { makeSchema } from "./api-graphql";
 import { defineContext } from "./defineContext";
 
 export async function setupGraphQLApi(
@@ -16,8 +18,6 @@ export async function setupGraphQLApi(
   const schema = makeSchema();
 
   await app.register(Mercurius, {
-    schema,
-    graphiql: true,
     context() {
       return defineContext({
         repositories: {
@@ -25,6 +25,8 @@ export async function setupGraphQLApi(
         },
       });
     },
+    graphiql: true,
+    schema,
     subscription: {
       context() {
         return defineContext({

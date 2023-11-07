@@ -1,4 +1,5 @@
 import type { UserReducer } from "./User";
+
 import { UserEventName } from "./User";
 
 export const reducer: UserReducer = (prevState, event) => {

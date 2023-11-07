@@ -21,8 +21,8 @@ export async function makeApp() {
     preflightContinue: true,
   });
   await app.register(FastifyCookie, {
-    secret: env.cookieSecret,
     hook: "onRequest",
+    secret: env.cookieSecret,
   });
 
   /**
@@ -40,11 +40,11 @@ export async function makeApp() {
    * Health Check Endpoint
    */
   app.route({
-    url: "/healthz",
-    method: "GET",
     handler: () => ({
       ok: true,
     }),
+    method: "GET",
+    url: "/healthz",
   });
 
   /**

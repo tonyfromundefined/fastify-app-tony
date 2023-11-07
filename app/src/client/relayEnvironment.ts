@@ -1,5 +1,6 @@
-import { createClient as createSubscriptionsClient } from "graphql-ws";
 import type { FetchFunction, SubscribeFunction } from "relay-runtime";
+
+import { createClient as createSubscriptionsClient } from "graphql-ws";
 import {
   Environment,
   Network,
@@ -14,7 +15,6 @@ const wsProtocol = window.location.protocol === "https:" ? "wss:" : "ws:";
 
 const fetchFn: FetchFunction = async (operation, variables, cacheConfig) => {
   const result = await fetch(GRAPHQL_ENDPOINT, {
-    method: "post",
     body: JSON.stringify({
       query: operation?.text,
       variables,
@@ -22,6 +22,7 @@ const fetchFn: FetchFunction = async (operation, variables, cacheConfig) => {
     headers: {
       "Content-Type": "application/json",
     },
+    method: "post",
     signal: cacheConfig.metadata?.signal as AbortSignal,
   }).then((response) => response.json());
 

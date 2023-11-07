@@ -1,7 +1,6 @@
+import { makeExecutableSchema } from "@graphql-tools/schema";
 import fs from "node:fs";
 import path from "node:path";
-
-import { makeExecutableSchema } from "@graphql-tools/schema";
 
 import { defineResolvers } from "./__generated__/resolvers";
 
@@ -18,8 +17,8 @@ export function makeSchema() {
   });
 
   return makeExecutableSchema({
-    typeDefs,
-    resolvers,
     inheritResolversFromInterfaces: true,
+    resolvers,
+    typeDefs,
   });
 }
