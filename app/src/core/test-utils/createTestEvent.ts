@@ -19,5 +19,6 @@ export function createTestEvent<
     eventCreatedAt: eventCreatedAt(),
     eventId: eventId(),
     eventName: params.eventName,
+    // biome-ignore lint/suspicious/noExplicitAny:
   } as any;
 }

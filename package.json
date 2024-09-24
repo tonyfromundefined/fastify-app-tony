@@ -10,7 +10,7 @@
     "build:dts": "ultra -r --build build:dts",
     "clean": "ultra -r clean",
     "dev": "ultra -r dev",
-    "format": "eslint --fix --ext .js,.json,.ts,.tsx --ignore-path .gitignore .",
+    "format": "biome check --write --unsafe .",
     "server:build": "yarn ultra -r --filter \"+@fastify-app-tony/app\" build",
     "test": "yarn build && ultra -r test",
     "typecheck": "tsc --noEmit",
@@ -20,15 +20,14 @@
     "esbuild": "^0.18"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.2",
     "@types/node": "^20.8.10",
     "@types/react": "^18.2.36",
     "concurrently": "^8.2.2",
-    "eslint": "^8.53.0",
-    "eslint-config-tonyfromundefined": "^0.5.0",
     "react": "^18.2.0",
     "typescript": "^5.2.2",
     "ultra-runner": "^3.10.5",
     "vite": "^4.5.0"
   },
-  "packageManager": "yarn@4.0.1"
+  "packageManager": "yarn@4.5.0"
 }

@@ -45,6 +45,7 @@ const subscribeFn: SubscribeFunction = (operation, variables) => {
         query: operation.text,
         variables,
       },
+      // biome-ignore lint/suspicious/noExplicitAny:
       sink as any,
     );
   });

@@ -1,8 +1,8 @@
 import type { FastifyInstance } from "fastify";
 
+import fs from "node:fs/promises";
+import path from "node:path";
 import FastifyStatic from "@fastify/static";
-import fs from "fs/promises";
-import path from "path";
 import { createServer } from "vite";
 
 const DEV = process.env.NODE_ENV !== "production";

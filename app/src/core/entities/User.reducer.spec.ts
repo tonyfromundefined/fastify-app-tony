@@ -19,6 +19,7 @@ test("User.created", () => {
     }),
   ];
 
+  // biome-ignore lint/suspicious/noExplicitAny:
   const state = events.reduce(reducer, null as any);
 
   expect(state).toStrictEqual({
@@ -44,6 +45,7 @@ test("User.deleted", () => {
     }),
   ];
 
+  // biome-ignore lint/suspicious/noExplicitAny:
   const state = events.reduce(reducer, null as any);
 
   expect(state).toStrictEqual({

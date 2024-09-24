@@ -4,7 +4,7 @@ import path from "node:path";
 import { build } from "esbuild";
 
 const pkg = JSON.parse(
-  fs.readFileSync(path.resolve("./package.json"), "utf-8")
+  fs.readFileSync(path.resolve("./package.json"), "utf-8"),
 );
 const external = [
   ...Object.keys({
