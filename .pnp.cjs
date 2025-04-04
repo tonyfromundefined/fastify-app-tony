@@ -38,6 +38,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:19.1.0"],\
           ["concurrently", "npm:9.1.2"],\
           ["react", "npm:19.1.0"],\
+          ["relay-compiler", "npm:18.2.0"],\
           ["typescript", "patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>::version=5.8.2&hash=5786d5"],\
           ["ultra-runner", "npm:3.10.5"],\
           ["vite", "virtual:97d6c125e4953f863676c13f32095c70967ce7ac1e1a97ce734dddf2a8613d618200ff18aea561528646e469e20140e8b6ff71d170b495e23147d9c767849c5a#npm:6.2.5"]\
@@ -1533,6 +1534,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:19.1.0"],\
           ["concurrently", "npm:9.1.2"],\
           ["react", "npm:19.1.0"],\
+          ["relay-compiler", "npm:18.2.0"],\
           ["typescript", "patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>::version=5.8.2&hash=5786d5"],\
           ["ultra-runner", "npm:3.10.5"],\
           ["vite", "virtual:97d6c125e4953f863676c13f32095c70967ce7ac1e1a97ce734dddf2a8613d618200ff18aea561528646e469e20140e8b6ff71d170b495e23147d9c767849c5a#npm:6.2.5"]\

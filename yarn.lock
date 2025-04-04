@@ -1010,6 +1010,7 @@ __metadata:
     "@types/react": "npm:^19.1.0"
     concurrently: "npm:^9.1.2"
     react: "npm:^19.1.0"
+    relay-compiler: "npm:^18.2.0"
     typescript: "npm:^5.8.2"
     ultra-runner: "npm:^3.10.5"
     vite: "npm:^6.2.5"

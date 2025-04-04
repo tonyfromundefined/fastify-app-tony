@@ -25,6 +25,7 @@
     "@types/react": "^19.1.0",
     "concurrently": "^9.1.2",
     "react": "^19.1.0",
+    "relay-compiler": "^18.2.0",
     "typescript": "^5.8.2",
     "ultra-runner": "^3.10.5",
     "vite": "^6.2.5"
