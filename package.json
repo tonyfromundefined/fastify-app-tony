@@ -16,9 +16,6 @@
     "typecheck": "tsc --noEmit",
     "version": "yarn install && git stage yarn.lock"
   },
-  "resolutions": {
-    "esbuild": "^0.18"
-  },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@types/node": "^22.14.0",

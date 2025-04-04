@@ -38,7 +38,6 @@ Separation of domain knowledge and scalability using event sourcing.
 - [GraphQL](https://graphql.org/)
   - [Mercurius](https://mercurius.dev/)
   - [GraphQL Code Generator](https://the-guild.dev/graphql/codegen)
-- [ESBuild](https://esbuild.github.io/)
 - [nodemon](https://nodemon.io/)
 - [Docker](https://www.docker.com/)
   - [docker-compose](https://docs.docker.com/compose/)
