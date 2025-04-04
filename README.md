@@ -8,9 +8,6 @@ Monolithic SaaS Application Starter based on Node.js and Vite. Develop both serv
 # Install dependencies
 $ yarn
 
-# Bootstrap MongoDB with `docker-compose`
-$ docker-compose up -d
-
 # Create `.env` file
 $ cp ./app/.env.example ./app/.env
 
@@ -36,8 +33,7 @@ Maintaining a stable development speed with fast feedback
 Separation of domain knowledge and scalability using event sourcing.
 
 - [Node.js](https://nodejs.org/)
-- [MongoDB](https://www.mongodb.com/)
-  - [eventive](https://github.com/tonyfromundefined/eventive)
+- [eventive](https://github.com/tonyfromundefined/eventive)
 - [Fastify](https://fastify.dev/)
 - [GraphQL](https://graphql.org/)
   - [Mercurius](https://mercurius.dev/)

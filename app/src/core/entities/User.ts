@@ -21,4 +21,4 @@ export type UserState = {
 
 export type UserReducer = BaseReducer<UserEvent, UserState>;
 
-export type UserRepository = Eventive<UserEvent, UserState>;
+export type UserRepository = {};

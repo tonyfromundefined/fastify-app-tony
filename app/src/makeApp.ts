@@ -2,13 +2,11 @@ import FastifyCookie from "@fastify/cookie";
 import FastifyCors from "@fastify/cors";
 import FastifyMiddie from "@fastify/middie";
 import Fastify from "fastify";
-import { MongoClient } from "mongodb";
 
 import { env } from "./env";
 import { makeUserRepository } from "./repositories";
 import { setupClient } from "./setupClient";
 import { setupGraphQLApi } from "./setupGraphQLApi";
-import { setupTrpcApi } from "./setupTrpcApi";
 
 export async function makeApp() {
   /**
@@ -26,15 +24,9 @@ export async function makeApp() {
   });
 
   /**
-   * Prepare MongoDB
-   */
-  const mongoClient = new MongoClient(env.mongo.endpoint);
-  const db = mongoClient.db(env.mongo.dbName);
-
-  /**
    * Prepare Repositories
    */
-  const userRepository = makeUserRepository({ db });
+  const userRepository = makeUserRepository();
 
   /**
    * Health Check Endpoint
@@ -62,17 +54,6 @@ export async function makeApp() {
    * POST /graphql
    */
   await setupGraphQLApi(app, {
-    userRepository,
-  });
-
-  /**
-   * Setup tRPC API
-   *
-   * GET  /api/*
-   * GET  /api/spec.json
-   * GET  /api/docs
-   */
-  await setupTrpcApi(app, {
     userRepository,
   });
 

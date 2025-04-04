@@ -2,5 +2,5 @@
   "recommendations": [
     "arcanis.vscode-zipfs",
     "biomejs.biome"
-  ],
+  ]
 }

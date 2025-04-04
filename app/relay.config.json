@@ -1,0 +1,13 @@
+{
+  "src": "./src/client",
+  "schema": "./src/graphql/__generated__/schema.graphql",
+  "language": "typescript",
+  "artifactDirectory": "./src/client/__relay__",
+  "exclude": [
+    "**/node_modules/**",
+    "**/__generated__/**",
+    "**/__relay__/**",
+    "**/test/**"
+  ],
+  "eagerEsModules": true
+}

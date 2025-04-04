@@ -20,14 +20,14 @@
     "esbuild": "^0.18"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.2",
-    "@types/node": "^20.8.10",
-    "@types/react": "^18.2.36",
-    "concurrently": "^8.2.2",
-    "react": "^18.2.0",
-    "typescript": "^5.2.2",
+    "@biomejs/biome": "^1.9.4",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.1.0",
+    "concurrently": "^9.1.2",
+    "react": "^19.1.0",
+    "typescript": "^5.8.2",
     "ultra-runner": "^3.10.5",
-    "vite": "^4.5.0"
+    "vite": "^6.2.5"
   },
-  "packageManager": "yarn@4.5.0"
+  "packageManager": "yarn@4.8.1"
 }

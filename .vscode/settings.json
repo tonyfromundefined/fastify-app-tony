@@ -15,5 +15,5 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": "always",
     "source.organizeImports.biome": "explicit"
-  },
+  }
 }
