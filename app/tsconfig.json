@@ -4,6 +4,7 @@
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "jsx": "react-jsx",
+    "lib": ["DOM"],
     "types": ["vitest/globals"]
   }
 }

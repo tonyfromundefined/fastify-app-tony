@@ -1,8 +1,8 @@
 {
-  "src": "./src/client",
-  "schema": "./src/graphql/__generated__/schema.graphql",
+  "src": "./src/plugins/client",
+  "schema": "./src/plugins/graphql/__generated__/schema.graphql",
   "language": "typescript",
-  "artifactDirectory": "./src/client/__relay__",
+  "artifactDirectory": "./src/plugins/client/__relay__",
   "exclude": [
     "**/node_modules/**",
     "**/__generated__/**",

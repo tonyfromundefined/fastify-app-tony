@@ -1,9 +1,7 @@
 import path from "node:path";
 import FastifyAutoLoad from "@fastify/autoload";
-import FastifyCookie from "@fastify/cookie";
 import FastifyCors from "@fastify/cors";
 import Fastify from "fastify";
-import { env } from "./env";
 
 export async function makeApp() {
   /**
@@ -19,18 +17,11 @@ export async function makeApp() {
   });
 
   /**
-   * Setup Cookie
-   */
-  await app.register(FastifyCookie, {
-    hook: "onRequest",
-    secret: env.cookieSecret,
-  });
-
-  /**
    * Setup Plugins
    */
   await app.register(FastifyAutoLoad, {
     dir: path.resolve("./src/plugins"),
+    maxDepth: 1,
   });
 
   /**

@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 import relay from "vite-plugin-relay-lite";
 
 export default defineConfig({
-  root: "./src/client",
+  root: "./src/plugins/client",
   build: {
     sourcemap: true,
     cssCodeSplit: false,

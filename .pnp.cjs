@@ -1565,7 +1565,8 @@ const RAW_RUNTIME_STATE =
       ["npm:6.2.0", {\
         "packageLocation": "./.yarn/cache/@fastify-autoload-npm-6.2.0-adcc0dd6a8-1b1c814dea.zip/node_modules/@fastify/autoload/",\
         "packageDependencies": [\
-          ["@fastify/autoload", "npm:6.2.0"]\
+          ["@fastify/autoload", "npm:6.2.0"],\
+          ["fastify", "npm:5.2.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2654,7 +2655,7 @@ const RAW_RUNTIME_STATE =
           ["@whatwg-node/fetch", "npm:0.9.9"],\
           ["chalk", "npm:4.1.2"],\
           ["debug", "virtual:ac3d8e680759ce54399273724d44e041d6c9b73454d191d411a8c44bb27e22f02aaf6ed9d3ad0ac1c298eac4833cff369c9c7b84c573016112c4f84be2cd8543#npm:4.4.0"],\
-          ["dotenv", "npm:16.3.1"],\
+          ["dotenv", "npm:16.4.7"],\
           ["graphql", "npm:16.10.0"],\
           ["graphql-request", "virtual:255f184446817760f99c3b3d2f01dfa3b830612700cb5b2d003d8110ad2b3200cebd7a877f8c1e82e2c820738e9f5018895ffa6684ce0c41fe48f06e328f4fe2#npm:6.1.0"],\
           ["http-proxy-agent", "npm:7.0.0"],\
@@ -4844,13 +4845,6 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["dotenv", [\
-      ["npm:16.3.1", {\
-        "packageLocation": "./.yarn/cache/dotenv-npm-16.3.1-e6d380a398-dbb778237e.zip/node_modules/dotenv/",\
-        "packageDependencies": [\
-          ["dotenv", "npm:16.3.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:16.4.7", {\
         "packageLocation": "./.yarn/cache/dotenv-npm-16.4.7-29680c94f8-f13bfe97db.zip/node_modules/dotenv/",\
         "packageDependencies": [\

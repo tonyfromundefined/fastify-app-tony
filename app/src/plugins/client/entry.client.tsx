@@ -1,4 +1,3 @@
-import "./_shims";
 import "./styles/global.css";
 
 import ReactDOM from "react-dom/client";

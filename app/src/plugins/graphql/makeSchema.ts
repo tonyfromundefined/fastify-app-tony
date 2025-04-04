@@ -6,7 +6,7 @@ import { defineResolvers } from "./__generated__/resolvers";
 
 export function makeSchema() {
   const typeDefs = fs.readFileSync(
-    path.resolve("./src/graphql/__generated__/schema.graphql"),
+    path.resolve("./src/plugins/graphql/__generated__/schema.graphql"),
     "utf-8",
   );
 

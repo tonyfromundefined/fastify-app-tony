@@ -24,7 +24,7 @@ export default fp(
       app.route({
         async handler(req, reply) {
           const template = await fs.readFile(
-            path.resolve("./src/client/index.html"),
+            path.resolve("./src/plugins/client/index.html"),
             "utf-8",
           );
 
@@ -40,14 +40,14 @@ export default fp(
       });
     } else {
       const html = await fs.readFile(
-        path.resolve("./dist/client/index.html"),
+        path.resolve("./dist/plugins/client/index.html"),
         "utf-8",
       );
 
       await app.register(FastifyStatic, {
         maxAge: "14 days",
         prefix: "/assets/",
-        root: path.resolve("./dist/client/assets"),
+        root: path.resolve("./dist/plugins/client/assets"),
       });
 
       app.route({

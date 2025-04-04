@@ -1,3 +1,3 @@
 export default function HomePage() {
-  return <div>Hello, Undefined!</div>;
+  return <div>Hello, Test!</div>;
 }
