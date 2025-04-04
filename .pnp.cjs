@@ -1475,6 +1475,7 @@ const RAW_RUNTIME_STATE =
           ["@fastify/autoload", "npm:6.2.0"],\
           ["@fastify/cookie", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:11.0.2"],\
           ["@fastify/cors", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:11.0.1"],\
+          ["@fastify/env", "npm:5.0.2"],\
           ["@fastify/middie", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:9.0.3"],\
           ["@fastify/static", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:8.1.1"],\
           ["@graphql-codegen/cli", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:5.0.5"],\
@@ -1483,6 +1484,7 @@ const RAW_RUNTIME_STATE =
           ["@graphql-codegen/typescript-resolvers", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:4.5.0"],\
           ["@graphql-tools/schema", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:10.0.23"],\
           ["@paralleldrive/cuid2", "npm:2.2.2"],\
+          ["@sinclair/typebox", "npm:0.34.33"],\
           ["@types/node", "npm:22.14.0"],\
           ["@types/react", "npm:19.1.0"],\
           ["@types/react-dom", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:19.1.1"],\
@@ -1497,7 +1499,7 @@ const RAW_RUNTIME_STATE =
           ["eventive", "npm:3.0.0"],\
           ["extensionless", "npm:1.9.9"],\
           ["fastify", "npm:5.2.2"],\
-          ["fastify-plugin", "npm:5.0.1"],\
+          ["fastify-plugin", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:5.0.1"],\
           ["graphql", "npm:16.10.0"],\
           ["graphql-codegen-typescript-resolvers-define", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:0.3.0"],\
           ["graphql-ws", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:6.0.4"],\
@@ -1583,7 +1585,7 @@ const RAW_RUNTIME_STATE =
           ["@types/fastify", null],\
           ["cookie", "npm:1.0.2"],\
           ["fastify", "npm:5.2.2"],\
-          ["fastify-plugin", "npm:5.0.1"]\
+          ["fastify-plugin", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:5.0.1"]\
         ],\
         "packagePeers": [\
           "@types/fastify",\
@@ -1606,12 +1608,23 @@ const RAW_RUNTIME_STATE =
           ["@fastify/cors", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:11.0.1"],\
           ["@types/fastify", null],\
           ["fastify", "npm:5.2.2"],\
-          ["fastify-plugin", "npm:5.0.1"],\
+          ["fastify-plugin", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:5.0.1"],\
           ["toad-cache", "npm:3.7.0"]\
         ],\
         "packagePeers": [\
           "@types/fastify",\
           "fastify"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@fastify/env", [\
+      ["npm:5.0.2", {\
+        "packageLocation": "./.yarn/cache/@fastify-env-npm-5.0.2-fa3cff37d5-8ad9a0b8db.zip/node_modules/@fastify/env/",\
+        "packageDependencies": [\
+          ["@fastify/env", "npm:5.0.2"],\
+          ["env-schema", "npm:6.0.1"],\
+          ["fastify-plugin", "virtual:fa3cff37d5da7b0fa1d97db7a94b753941a074ee3eb671b8f997f6b38cd26afd03ca1b85119350b618b5eb2abf4218f363ce0ed103676cd190dc15a7f2bb378d#npm:5.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1678,7 +1691,7 @@ const RAW_RUNTIME_STATE =
           ["@types/connect", "npm:3.4.35"],\
           ["@types/fastify", null],\
           ["fastify", "npm:5.2.2"],\
-          ["fastify-plugin", "npm:5.0.1"],\
+          ["fastify-plugin", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:5.0.1"],\
           ["path-to-regexp", "npm:8.2.0"],\
           ["reusify", "npm:1.0.4"]\
         ],\
@@ -1731,7 +1744,7 @@ const RAW_RUNTIME_STATE =
           ["@types/fastify", null],\
           ["content-disposition", "npm:0.5.4"],\
           ["fastify", "npm:5.2.2"],\
-          ["fastify-plugin", "npm:5.0.1"],\
+          ["fastify-plugin", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:5.0.1"],\
           ["fastq", "npm:1.19.1"],\
           ["glob", "npm:11.0.1"]\
         ],\
@@ -1748,7 +1761,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@fastify/websocket", "npm:11.0.2"],\
           ["duplexify", "npm:4.1.3"],\
-          ["fastify-plugin", "npm:5.0.1"],\
+          ["fastify-plugin", "virtual:fa3cff37d5da7b0fa1d97db7a94b753941a074ee3eb671b8f997f6b38cd26afd03ca1b85119350b618b5eb2abf4218f363ce0ed103676cd190dc15a7f2bb378d#npm:5.0.1"],\
           ["ws", "virtual:d90e23672d7fd8fffa60c9db4b9a08225c4090fab6a2126521d45dc76bb5ed40213aa6da3295a1599bf04e6f131d190f0ca5a01d79e41ae531bd5879b326f2c5#npm:8.18.1"]\
         ],\
         "linkType": "HARD"\
@@ -3181,6 +3194,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/unplugged/@rollup-rollup-win32-x64-msvc-npm-4.39.0-719e339567/node_modules/@rollup/rollup-win32-x64-msvc/",\
         "packageDependencies": [\
           ["@rollup/rollup-win32-x64-msvc", "npm:4.39.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@sinclair/typebox", [\
+      ["npm:0.34.33", {\
+        "packageLocation": "./.yarn/cache/@sinclair-typebox-npm-0.34.33-ff674ae550-7948758249.zip/node_modules/@sinclair/typebox/",\
+        "packageDependencies": [\
+          ["@sinclair/typebox", "npm:0.34.33"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4837,6 +4859,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["dotenv-expand", [\
+      ["npm:10.0.0", {\
+        "packageLocation": "./.yarn/cache/dotenv-expand-npm-10.0.0-fa5b032ad9-b41eb278bc.zip/node_modules/dotenv-expand/",\
+        "packageDependencies": [\
+          ["dotenv-expand", "npm:10.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["dotenv-safe", [\
       ["npm:9.1.0", {\
         "packageLocation": "./.yarn/cache/dotenv-safe-npm-9.1.0-5987be0396-b0b04bbce8.zip/node_modules/dotenv-safe/",\
@@ -4940,6 +4971,18 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/env-paths-npm-2.2.1-7c7577428c-65b5df55a8.zip/node_modules/env-paths/",\
         "packageDependencies": [\
           ["env-paths", "npm:2.2.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["env-schema", [\
+      ["npm:6.0.1", {\
+        "packageLocation": "./.yarn/cache/env-schema-npm-6.0.1-0378c3abec-721455d2bd.zip/node_modules/env-schema/",\
+        "packageDependencies": [\
+          ["ajv", "npm:8.17.1"],\
+          ["dotenv", "npm:16.4.7"],\
+          ["dotenv-expand", "npm:10.0.0"],\
+          ["env-schema", "npm:6.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -5273,6 +5316,32 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/cache/fastify-plugin-npm-5.0.1-270d511cc9-76f6960558.zip/node_modules/fastify-plugin/",\
         "packageDependencies": [\
           ["fastify-plugin", "npm:5.0.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:5.0.1", {\
+        "packageLocation": "./.yarn/__virtual__/fastify-plugin-virtual-f512714f70/0/cache/fastify-plugin-npm-5.0.1-270d511cc9-76f6960558.zip/node_modules/fastify-plugin/",\
+        "packageDependencies": [\
+          ["@types/fastify", null],\
+          ["fastify", "npm:5.2.2"],\
+          ["fastify-plugin", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:5.0.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/fastify",\
+          "fastify"\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["virtual:fa3cff37d5da7b0fa1d97db7a94b753941a074ee3eb671b8f997f6b38cd26afd03ca1b85119350b618b5eb2abf4218f363ce0ed103676cd190dc15a7f2bb378d#npm:5.0.1", {\
+        "packageLocation": "./.yarn/__virtual__/fastify-plugin-virtual-3dba35def9/0/cache/fastify-plugin-npm-5.0.1-270d511cc9-76f6960558.zip/node_modules/fastify-plugin/",\
+        "packageDependencies": [\
+          ["@types/fastify", null],\
+          ["fastify", null],\
+          ["fastify-plugin", "virtual:fa3cff37d5da7b0fa1d97db7a94b753941a074ee3eb671b8f997f6b38cd26afd03ca1b85119350b618b5eb2abf4218f363ce0ed103676cd190dc15a7f2bb378d#npm:5.0.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/fastify",\
+          "fastify"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6684,7 +6753,7 @@ const RAW_RUNTIME_STATE =
           ["@types/fastify", null],\
           ["@types/graphql", null],\
           ["fastify", "npm:5.2.2"],\
-          ["fastify-plugin", "npm:5.0.1"],\
+          ["fastify-plugin", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:5.0.1"],\
           ["graphql", "npm:16.10.0"],\
           ["graphql-jit", "virtual:1986a618de191a26af4d9e2aaa1368dc0db8240cdb1bc33f2b1ec1942fb3ba4136677fed609578dd222616e6c9c1e48afef385133ad81d1822a2b728f41a756a#npm:0.8.7"],\
           ["mercurius", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:16.1.0"],\

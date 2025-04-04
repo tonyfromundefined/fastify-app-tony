@@ -1,12 +1,9 @@
+import path from "node:path";
+import FastifyAutoLoad from "@fastify/autoload";
 import FastifyCookie from "@fastify/cookie";
 import FastifyCors from "@fastify/cors";
-import FastifyMiddie from "@fastify/middie";
 import Fastify from "fastify";
-
 import { env } from "./env";
-import { makeUserRepository } from "./repositories";
-import { setupClient } from "./setupClient";
-import { setupGraphQLApi } from "./setupGraphQLApi";
 
 export async function makeApp() {
   /**
@@ -14,19 +11,27 @@ export async function makeApp() {
    */
   const app = Fastify();
 
-  await app.register(FastifyMiddie);
+  /**
+   * Setup CORS
+   */
   await app.register(FastifyCors, {
     preflightContinue: true,
   });
+
+  /**
+   * Setup Cookie
+   */
   await app.register(FastifyCookie, {
     hook: "onRequest",
     secret: env.cookieSecret,
   });
 
   /**
-   * Prepare Repositories
+   * Setup Plugins
    */
-  const userRepository = makeUserRepository();
+  await app.register(FastifyAutoLoad, {
+    dir: path.resolve("./src/plugins"),
+  });
 
   /**
    * Health Check Endpoint
@@ -37,24 +42,6 @@ export async function makeApp() {
     }),
     method: "GET",
     url: "/healthz",
-  });
-
-  /**
-   * Setup React Client (Single Page Application)
-   *
-   * GET  /*
-   * GET  /assets/*
-   */
-  await setupClient(app);
-
-  /**
-   * Setup GraphQL API
-   *
-   * GET  /graphiql
-   * POST /graphql
-   */
-  await setupGraphQLApi(app, {
-    userRepository,
   });
 
   /**

@@ -1,18 +1,13 @@
 import type { BaseDomainEvent, BaseReducer, Eventive } from "eventive";
 
-export enum UserEventName {
-  Created = "user.created",
-  Deleted = "user.deleted",
-}
-
 export type UserEvent =
   | BaseDomainEvent<
-      UserEventName.Created,
+      "user.created",
       {
         email: string;
       }
     >
-  | BaseDomainEvent<UserEventName.Deleted, {}>;
+  | BaseDomainEvent<"user.deleted", {}>;
 
 export type UserState = {
   deletedAt?: string;
