@@ -3,8 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "yarn build:client",
-    "build:client": "vite build --outDir ../../../dist/plugins/client",
+    "build": "react-router build",
     "clean": "yarn rimraf ./dist && yarn rimraf ./node_modules",
     "codegen": "graphql-codegen",
     "dev": "NODE_ENV=development node --loader extensionless --experimental-strip-types --watch-path=./src ./src/index.ts | yarn pino-pretty --singleLine",
