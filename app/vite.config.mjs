@@ -1,16 +1,15 @@
-import { vanillaExtractPlugin } from "@vanilla-extract/vite-plugin";
-import react from "@vitejs/plugin-react";
+import { reactRouter } from "@react-router/dev/vite";
 import { defineConfig } from "vite";
+import { cjsInterop } from "vite-plugin-cjs-interop";
 import relay from "vite-plugin-relay-lite";
 
 export default defineConfig({
-  root: "./src/plugins/client",
-  build: {
-    sourcemap: true,
-    cssCodeSplit: false,
-  },
-  plugins: [react(), vanillaExtractPlugin(), relay()],
-  define: {
-    "process.env": {},
-  },
+  ssr: {},
+  plugins: [
+    reactRouter(),
+    cjsInterop({
+      dependencies: ["relay-runtime", "react-relay"],
+    }),
+    relay(),
+  ],
 });

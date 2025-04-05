@@ -1,13 +1,9 @@
 {
-  "src": "./src/plugins/client",
+  "$schema": "https://gist.githubusercontent.com/tonyfromundefined/fbbf9facd07b25410263c3643223ed71/raw/5e40425ad8a6a474b8a20d2f1490a3634e89484c/relay-config-schema.json",
+  "src": "./src/plugins/web",
   "schema": "./src/plugins/graphql/__generated__/schema.graphql",
   "language": "typescript",
-  "artifactDirectory": "./src/plugins/client/__relay__",
-  "exclude": [
-    "**/node_modules/**",
-    "**/__generated__/**",
-    "**/__relay__/**",
-    "**/test/**"
-  ],
-  "eagerEsModules": true
+  "artifactDirectory": "./src/plugins/web/__generated__",
+  "eagerEsModules": true,
+  "exclude": ["**/__generated__/**"]
 }
