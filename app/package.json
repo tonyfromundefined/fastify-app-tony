@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "react-router build",
+    "build": "yarn react-router build",
     "clean": "yarn rimraf ./dist && yarn rimraf ./node_modules",
     "codegen": "graphql-codegen",
     "dev": "nodemon",
