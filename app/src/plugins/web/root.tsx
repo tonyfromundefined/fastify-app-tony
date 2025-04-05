@@ -1,8 +1,8 @@
 import { useMemo } from "react";
 import { RelayEnvironmentProvider } from "react-relay";
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
+import { createRelayRenderEnvironment } from "react-router-relay";
 import favicon from "./assets/favicon.png";
-import { createRelayRenderEnvironment } from "./relay/createRelayRenderEnvironment";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (

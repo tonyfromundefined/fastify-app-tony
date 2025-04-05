@@ -40,6 +40,7 @@
     "react-dom": "^19.1.0",
     "react-relay": "^18.2.0",
     "react-router": "^7.5.0",
+    "react-router-relay": "workspace:^",
     "relay-runtime": "^18.2.0"
   },
   "devDependencies": {
