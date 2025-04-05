@@ -1,79 +1,28 @@
-import FastifyCookie from "@fastify/cookie";
-import FastifyCors from "@fastify/cors";
-import FastifyMiddie from "@fastify/middie";
-import Fastify from "fastify";
-import { MongoClient } from "mongodb";
-
-import { env } from "./env";
-import { makeUserRepository } from "./repositories";
-import { setupClient } from "./setupClient";
-import { setupGraphQLApi } from "./setupGraphQLApi";
-import { setupTrpcApi } from "./setupTrpcApi";
+import path from "node:path";
+import fastifyAutoload from "@fastify/autoload";
+import fastify from "fastify";
 
 export async function makeApp() {
   /**
-   * Setup Fastify and Plugins
+   * Setup Fastify
    */
-  const app = Fastify();
-
-  await app.register(FastifyMiddie);
-  await app.register(FastifyCors, {
-    preflightContinue: true,
-  });
-  await app.register(FastifyCookie, {
-    hook: "onRequest",
-    secret: env.cookieSecret,
-  });
+  const app = fastify();
 
   /**
-   * Prepare MongoDB
+   * Setup Plugins
    */
-  const mongoClient = new MongoClient(env.mongo.endpoint);
-  const db = mongoClient.db(env.mongo.dbName);
-
-  /**
-   * Prepare Repositories
-   */
-  const userRepository = makeUserRepository({ db });
-
-  /**
-   * Health Check Endpoint
-   */
-  app.route({
-    handler: () => ({
-      ok: true,
-    }),
-    method: "GET",
-    url: "/healthz",
+  await app.register(fastifyAutoload, {
+    dir: path.resolve("./src/plugins"),
+    ignorePattern: /\.spec\.ts$/,
+    maxDepth: 1,
   });
 
   /**
-   * Setup React Client (Single Page Application)
-   *
-   * GET  /*
-   * GET  /assets/*
+   * Setup Plugins
    */
-  await setupClient(app);
-
-  /**
-   * Setup GraphQL API
-   *
-   * GET  /graphiql
-   * POST /graphql
-   */
-  await setupGraphQLApi(app, {
-    userRepository,
-  });
-
-  /**
-   * Setup tRPC API
-   *
-   * GET  /api/*
-   * GET  /api/spec.json
-   * GET  /api/docs
-   */
-  await setupTrpcApi(app, {
-    userRepository,
+  await app.register(fastifyAutoload, {
+    dir: path.resolve("./src/routes"),
+    ignorePattern: /\.spec\.ts$/,
   });
 
   /**

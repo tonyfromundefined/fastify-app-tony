@@ -2,15 +2,15 @@ import "dotenv-safe/config.js";
 
 import { makeApp } from "./makeApp";
 
-const HOST = "0.0.0.0";
-const PORT = 3000;
+const HOST = process.env.HOST ?? "0.0.0.0";
+const PORT = process.env.PORT ?? "3000";
 
 Promise.resolve()
   .then(() => makeApp())
   .then((app) =>
     app.listen({
       host: HOST,
-      port: PORT,
+      port: Number.parseInt(PORT.toString(), 10),
     }),
   )
   .then(() => {

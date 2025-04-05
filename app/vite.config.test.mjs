@@ -8,5 +8,11 @@ export default defineConfig({
         fallbackCJS: true,
       },
     },
+    poolOptions: {
+      forks: {
+        execArgv: ["--experimental-strip-types", "--loader", "extensionless"],
+      },
+    },
+    setupFiles: ["dotenv-safe/config.js"],
   },
 });

@@ -1,15 +1,13 @@
 import type { UserReducer } from "./User";
 
-import { UserEventName } from "./User";
-
 export const reducer: UserReducer = (prevState, event) => {
   switch (event.eventName) {
-    case UserEventName.Created: {
+    case "user.created": {
       return {
         email: event.body.email,
       };
     }
-    case UserEventName.Deleted: {
+    case "user.deleted": {
       return {
         ...prevState,
         deletedAt: event.eventCreatedAt,

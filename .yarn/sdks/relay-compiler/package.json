@@ -1,0 +1,7 @@
+{
+  "name": "relay-compiler",
+  "version": "18.2.0-sdk",
+  "main": "index.js",
+  "type": "commonjs",
+  "bin": "cli.js"
+}

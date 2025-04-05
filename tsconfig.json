@@ -1,12 +1,28 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "jsx": "react-jsx",
-    "module": "commonjs",
-    "declaration": true,
+    // Language and Environment
+    "target": "ES2018",
+    "lib": ["ES2018"],
+
+    // Base module configuration
+    // You must set module option to "NodeNext" or "preserve" or "ESNext" when importing this file.
+    "moduleDetection": "force",
+    "isolatedModules": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
+    "verbatimModuleSyntax": true,
+    "noUncheckedSideEffectImports": true, // Side effect only imports must be checked if the module can be resolved.
+
+    // Type Checking
     "strict": true,
-    "skipLibCheck": false
+    "noImplicitOverride": true,
+    "noUncheckedIndexedAccess": true,
+    "forceConsistentCasingInFileNames": true,
+    "erasableSyntaxOnly": true, // For maximum compatibility with node and other environments with typescript support based on type stripping.
+    "skipLibCheck": true,
+
+    // Emit
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true
   }
 }
