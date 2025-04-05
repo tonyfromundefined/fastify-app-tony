@@ -1,28 +1,27 @@
 import type { CodegenConfig } from "@graphql-codegen/cli";
 
 const config: CodegenConfig = {
+  schema: "./src/plugins/graphql/**/typedefs/*.graphql",
   generates: {
-    "./src/plugins/graphql/__generated__/resolvers.ts": {
+    "./src/plugins/graphql/modules/": {
+      preset: "graphql-modules",
+      presetConfig: {
+        baseTypesPath: "../__generated__/graphql.ts",
+        filename: "__generated__/module-types.ts",
+        encapsulateModuleTypes: "prefix",
+      },
+      plugins: ["typescript", "typescript-resolvers"],
       config: {
         contextType: "../../../Context#Context",
         enumsAsTypes: true,
         mapperTypeSuffix: "Type",
         useTypeImports: true,
       },
-      plugins: [
-        "@graphql-codegen/typescript",
-        "@graphql-codegen/typescript-resolvers",
-        "graphql-codegen-typescript-resolvers-define",
-      ],
     },
     "./src/plugins/graphql/__generated__/schema.graphql": {
-      plugins: ["@graphql-codegen/schema-ast"],
+      plugins: ["schema-ast"],
     },
   },
-  schema: [
-    "./src/plugins/graphql/**/*.graphql",
-    "!./src/plugins/graphql/__generated__/schema.graphql",
-  ],
 };
 
 export default config;
