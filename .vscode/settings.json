@@ -15,5 +15,8 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": "always",
     "source.organizeImports.biome": "explicit"
-  }
+  },
+
+  // Relay
+  "relay.pathToRelay": ".yarn/sdks/relay-compiler/cli.js"
 }
