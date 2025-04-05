@@ -5,11 +5,16 @@ import relay from "vite-plugin-relay-lite";
 
 export default defineConfig({
   ssr: {},
+  server: {
+    cors: false,
+  },
   plugins: [
     reactRouter(),
     cjsInterop({
       dependencies: ["relay-runtime", "react-relay"],
     }),
-    relay(),
+    relay({
+      module: "esmodule",
+    }),
   ],
 });

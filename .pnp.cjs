@@ -44,7 +44,7 @@ const RAW_RUNTIME_STATE =
           ["concurrently", "npm:9.1.2"],\
           ["react", "npm:19.1.0"],\
           ["relay-compiler", "npm:18.2.0"],\
-          ["typescript", "patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>::version=5.8.2&hash=5786d5"],\
+          ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"],\
           ["ultra-runner", "npm:3.10.5"],\
           ["vite", "virtual:97d6c125e4953f863676c13f32095c70967ce7ac1e1a97ce734dddf2a8613d618200ff18aea561528646e469e20140e8b6ff71d170b495e23147d9c767849c5a#npm:6.2.5"]\
         ],\
@@ -1593,9 +1593,8 @@ const RAW_RUNTIME_STATE =
           ["@envelop/core", "npm:5.2.3"],\
           ["@envelop/graphql-modules", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:7.1.3"],\
           ["@fastify-app-tony/app", "workspace:app"],\
-          ["@fastify/autoload", "npm:6.2.0"],\
+          ["@fastify/autoload", "npm:6.3.0"],\
           ["@fastify/cookie", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:11.0.2"],\
-          ["@fastify/cors", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:11.0.1"],\
           ["@fastify/env", "npm:5.0.2"],\
           ["@fastify/middie", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:9.0.3"],\
           ["@fastify/static", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:8.1.1"],\
@@ -1643,7 +1642,7 @@ const RAW_RUNTIME_STATE =
           ["relay-compiler", "npm:18.2.0"],\
           ["relay-runtime", "npm:18.2.0"],\
           ["rimraf", "npm:6.0.1"],\
-          ["typescript", "patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>::version=5.8.2&hash=5786d5"],\
+          ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"],\
           ["vite", "virtual:97d6c125e4953f863676c13f32095c70967ce7ac1e1a97ce734dddf2a8613d618200ff18aea561528646e469e20140e8b6ff71d170b495e23147d9c767849c5a#npm:6.2.5"],\
           ["vite-plugin-cjs-interop", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:2.2.0"],\
           ["vite-plugin-relay-lite", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:0.10.0"],\
@@ -1663,7 +1662,7 @@ const RAW_RUNTIME_STATE =
           ["concurrently", "npm:9.1.2"],\
           ["react", "npm:19.1.0"],\
           ["relay-compiler", "npm:18.2.0"],\
-          ["typescript", "patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>::version=5.8.2&hash=5786d5"],\
+          ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"],\
           ["ultra-runner", "npm:3.10.5"],\
           ["vite", "virtual:97d6c125e4953f863676c13f32095c70967ce7ac1e1a97ce734dddf2a8613d618200ff18aea561528646e469e20140e8b6ff71d170b495e23147d9c767849c5a#npm:6.2.5"]\
         ],\
@@ -1692,10 +1691,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@fastify/autoload", [\
-      ["npm:6.2.0", {\
-        "packageLocation": "./.yarn/cache/@fastify-autoload-npm-6.2.0-adcc0dd6a8-1b1c814dea.zip/node_modules/@fastify/autoload/",\
+      ["npm:6.3.0", {\
+        "packageLocation": "./.yarn/cache/@fastify-autoload-npm-6.3.0-b4760c8b65-4f38b006c5.zip/node_modules/@fastify/autoload/",\
         "packageDependencies": [\
-          ["@fastify/autoload", "npm:6.2.0"],\
+          ["@fastify/autoload", "npm:6.3.0"],\
           ["fastify", "npm:5.2.2"]\
         ],\
         "linkType": "HARD"\
@@ -1717,30 +1716,6 @@ const RAW_RUNTIME_STATE =
           ["cookie", "npm:1.0.2"],\
           ["fastify", "npm:5.2.2"],\
           ["fastify-plugin", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:5.0.1"]\
-        ],\
-        "packagePeers": [\
-          "@types/fastify",\
-          "fastify"\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
-    ["@fastify/cors", [\
-      ["npm:11.0.1", {\
-        "packageLocation": "./.yarn/cache/@fastify-cors-npm-11.0.1-7864c06ac2-4dec4e370b.zip/node_modules/@fastify/cors/",\
-        "packageDependencies": [\
-          ["@fastify/cors", "npm:11.0.1"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:11.0.1", {\
-        "packageLocation": "./.yarn/__virtual__/@fastify-cors-virtual-6e42f515c7/0/cache/@fastify-cors-npm-11.0.1-7864c06ac2-4dec4e370b.zip/node_modules/@fastify/cors/",\
-        "packageDependencies": [\
-          ["@fastify/cors", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:11.0.1"],\
-          ["@types/fastify", null],\
-          ["fastify", "npm:5.2.2"],\
-          ["fastify-plugin", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:5.0.1"],\
-          ["toad-cache", "npm:3.7.0"]\
         ],\
         "packagePeers": [\
           "@types/fastify",\
@@ -3443,7 +3418,7 @@ const RAW_RUNTIME_STATE =
           ["react-router", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:7.5.0"],\
           ["semver", "npm:7.7.1"],\
           ["set-cookie-parser", "npm:2.7.1"],\
-          ["typescript", "patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>::version=5.8.2&hash=5786d5"],\
+          ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"],\
           ["valibot", "virtual:888e6a863d589790d2da688a473572ae39f52b9d079e3c5f171c06a49ea80939fe9606cc9269625ce19893eabb716e47a69e4266fb1f248df968b8d3034b3528#npm:0.41.0"],\
           ["vite", "virtual:97d6c125e4953f863676c13f32095c70967ce7ac1e1a97ce734dddf2a8613d618200ff18aea561528646e469e20140e8b6ff71d170b495e23147d9c767849c5a#npm:6.2.5"],\
           ["vite-node", "npm:3.0.0-beta.2"],\
@@ -3482,7 +3457,7 @@ const RAW_RUNTIME_STATE =
           ["react-router", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:7.5.0"],\
           ["source-map-support", "npm:0.5.21"],\
           ["stream-slice", "npm:0.1.2"],\
-          ["typescript", "patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>::version=5.8.2&hash=5786d5"],\
+          ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"],\
           ["undici", "npm:6.21.2"]\
         ],\
         "packagePeers": [\
@@ -4991,7 +4966,7 @@ const RAW_RUNTIME_STATE =
           ["rollup-plugin-swc3", "virtual:6779bf9646d4851989c267d733d84091c4ef31f015679fbff365ce29114ccda49065745869bb1892f6f6d2d6d6e4796f1994aeb6a1381e9b77c081c5a8932eea#npm:0.11.2"],\
           ["rollup-preserve-directives", "virtual:6779bf9646d4851989c267d733d84091c4ef31f015679fbff365ce29114ccda49065745869bb1892f6f6d2d6d6e4796f1994aeb6a1381e9b77c081c5a8932eea#npm:1.1.3"],\
           ["tslib", "npm:2.8.1"],\
-          ["typescript", "patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>::version=5.8.2&hash=5786d5"],\
+          ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"],\
           ["yargs", "npm:17.7.2"]\
         ],\
         "packagePeers": [\
@@ -6546,17 +6521,6 @@ const RAW_RUNTIME_STATE =
           ["once", "npm:1.4.0"]\
         ],\
         "linkType": "HARD"\
-      }],\
-      ["npm:9.3.5", {\
-        "packageLocation": "./.yarn/cache/glob-npm-9.3.5-2f602083f0-e5fa8a58ad.zip/node_modules/glob/",\
-        "packageDependencies": [\
-          ["fs.realpath", "npm:1.0.0"],\
-          ["glob", "npm:9.3.5"],\
-          ["minimatch", "npm:8.0.4"],\
-          ["minipass", "npm:4.2.8"],\
-          ["path-scurry", "npm:1.11.1"]\
-        ],\
-        "linkType": "HARD"\
       }]\
     ]],\
     ["glob-parent", [\
@@ -7944,14 +7908,6 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:8.0.4", {\
-        "packageLocation": "./.yarn/cache/minimatch-npm-8.0.4-bf57f0e98a-aef05598ee.zip/node_modules/minimatch/",\
-        "packageDependencies": [\
-          ["brace-expansion", "npm:2.0.1"],\
-          ["minimatch", "npm:8.0.4"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:9.0.5", {\
         "packageLocation": "./.yarn/cache/minimatch-npm-9.0.5-9aa93d97fa-dd6a8927b0.zip/node_modules/minimatch/",\
         "packageDependencies": [\
@@ -9162,8 +9118,8 @@ const RAW_RUNTIME_STATE =
           ["react-router", "virtual:7abfbe010c4cb7e38d7dbf798437f3104189e2686f131d2cf53798a94d427d87d9598627924a40047bbd6c66ab33a8f51909e5e51877fa88f59d0cd2c3ab2ac9#npm:7.5.0"],\
           ["react-router-relay", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#workspace:packages/react-router-relay"],\
           ["relay-runtime", "npm:18.2.0"],\
-          ["rimraf", "npm:4.4.1"],\
-          ["typescript", "patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>::version=5.8.2&hash=5786d5"]\
+          ["rimraf", "npm:6.0.1"],\
+          ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"]\
         ],\
         "packagePeers": [\
           "@types/react-relay",\
@@ -9188,8 +9144,8 @@ const RAW_RUNTIME_STATE =
           ["react-router", "virtual:7abfbe010c4cb7e38d7dbf798437f3104189e2686f131d2cf53798a94d427d87d9598627924a40047bbd6c66ab33a8f51909e5e51877fa88f59d0cd2c3ab2ac9#npm:7.5.0"],\
           ["react-router-relay", "workspace:packages/react-router-relay"],\
           ["relay-runtime", "npm:18.2.0"],\
-          ["rimraf", "npm:4.4.1"],\
-          ["typescript", "patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>::version=5.8.2&hash=5786d5"]\
+          ["rimraf", "npm:6.0.1"],\
+          ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -9437,14 +9393,6 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "HARD"\
       }],\
-      ["npm:4.4.1", {\
-        "packageLocation": "./.yarn/cache/rimraf-npm-4.4.1-80b02e041a-218ef91221.zip/node_modules/rimraf/",\
-        "packageDependencies": [\
-          ["glob", "npm:9.3.5"],\
-          ["rimraf", "npm:4.4.1"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["npm:6.0.1", {\
         "packageLocation": "./.yarn/cache/rimraf-npm-6.0.1-2d0b0aeb1b-0eb7edf08a.zip/node_modules/rimraf/",\
         "packageDependencies": [\
@@ -9503,7 +9451,7 @@ const RAW_RUNTIME_STATE =
           ["magic-string", "npm:0.30.17"],\
           ["rollup", "npm:4.39.0"],\
           ["rollup-plugin-dts", "virtual:6779bf9646d4851989c267d733d84091c4ef31f015679fbff365ce29114ccda49065745869bb1892f6f6d2d6d6e4796f1994aeb6a1381e9b77c081c5a8932eea#npm:6.2.1"],\
-          ["typescript", "patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>::version=5.8.2&hash=5786d5"]\
+          ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"]\
         ],\
         "packagePeers": [\
           "@types/rollup",\
@@ -10412,10 +10360,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["typescript", [\
-      ["patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>::version=5.8.2&hash=5786d5", {\
-        "packageLocation": "./.yarn/cache/typescript-patch-26c53754b1-97920a082f.zip/node_modules/typescript/",\
+      ["patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5", {\
+        "packageLocation": "./.yarn/cache/typescript-patch-f64146f279-b9b1e73dab.zip/node_modules/typescript/",\
         "packageDependencies": [\
-          ["typescript", "patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>::version=5.8.2&hash=5786d5"]\
+          ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -10628,7 +10576,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/valibot-virtual-aeb97d68e4/0/cache/valibot-npm-0.41.0-3491926da5-794b34056e.zip/node_modules/valibot/",\
         "packageDependencies": [\
           ["@types/typescript", null],\
-          ["typescript", "patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>::version=5.8.2&hash=5786d5"],\
+          ["typescript", "patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"],\
           ["valibot", "virtual:888e6a863d589790d2da688a473572ae39f52b9d079e3c5f171c06a49ea80939fe9606cc9269625ce19893eabb716e47a69e4266fb1f248df968b8d3034b3528#npm:0.41.0"]\
         ],\
         "packagePeers": [\

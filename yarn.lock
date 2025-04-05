@@ -1028,9 +1028,8 @@ __metadata:
   dependencies:
     "@envelop/core": "npm:^5.2.3"
     "@envelop/graphql-modules": "npm:^7.1.3"
-    "@fastify/autoload": "npm:^6.2.0"
+    "@fastify/autoload": "npm:^6.3.0"
     "@fastify/cookie": "npm:^11.0.2"
-    "@fastify/cors": "npm:^11.0.1"
     "@fastify/env": "npm:^5.0.2"
     "@fastify/middie": "npm:^9.0.3"
     "@fastify/static": "npm:^8.1.1"
@@ -1067,7 +1066,7 @@ __metadata:
     graphql-modules: "patch:graphql-modules@npm%3A3.0.0#~/.yarn/patches/graphql-modules-npm-3.0.0-27f60c3f79.patch"
     graphql-sock: "npm:^1.0.1"
     graphql-yoga: "npm:^5.13.2"
-    isbot: "npm:^5"
+    isbot: "npm:^5.1.25"
     nodemon: "npm:^3.1.9"
     pino-pretty: "npm:^13.0.0"
     react: "npm:^19.1.0"
@@ -1078,7 +1077,7 @@ __metadata:
     relay-compiler: "npm:^18.2.0"
     relay-runtime: "npm:^18.2.0"
     rimraf: "npm:^6.0.1"
-    typescript: "npm:^5.8.2"
+    typescript: "npm:^5.8.3"
     vite: "npm:^6.2.5"
     vite-plugin-cjs-interop: "npm:^2.2.0"
     vite-plugin-relay-lite: "npm:^0.10.0"
@@ -1096,7 +1095,7 @@ __metadata:
     concurrently: "npm:^9.1.2"
     react: "npm:^19.1.0"
     relay-compiler: "npm:^18.2.0"
-    typescript: "npm:^5.8.2"
+    typescript: "npm:^5.8.3"
     ultra-runner: "npm:^3.10.5"
     vite: "npm:^6.2.5"
   languageName: unknown
@@ -1120,10 +1119,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fastify/autoload@npm:^6.2.0":
-  version: 6.2.0
-  resolution: "@fastify/autoload@npm:6.2.0"
-  checksum: 10/1b1c814deab8ea989546f9dbbafce226b7058096b4b9fbf3c60081e562b4403f81c1f06d491bef555cc514ddeb5f301a889e467bc142e780fed45306a9aa5510
+"@fastify/autoload@npm:^6.3.0":
+  version: 6.3.0
+  resolution: "@fastify/autoload@npm:6.3.0"
+  checksum: 10/4f38b006c5a6788fb52debea3f85cc9e86ac84eb59bce1a0aef34ac13cbb84103f407ec3253538edc6095b3731911464ae162eac2be7c47464c872c0a0f3018b
   languageName: node
   linkType: hard
 
@@ -1134,16 +1133,6 @@ __metadata:
     cookie: "npm:^1.0.0"
     fastify-plugin: "npm:^5.0.0"
   checksum: 10/93b651e50e29de83561fe773330005c06111127a46f4e9154f157807b52d95661adce8819dbce7e625c2d2458c000fb0e0d24b3e4862ec26742027995bc55377
-  languageName: node
-  linkType: hard
-
-"@fastify/cors@npm:^11.0.1":
-  version: 11.0.1
-  resolution: "@fastify/cors@npm:11.0.1"
-  dependencies:
-    fastify-plugin: "npm:^5.0.0"
-    toad-cache: "npm:^3.7.0"
-  checksum: 10/4dec4e370b122dce6f6801cd0b599ad19621b406a314c2ccccf006a0fb3123f2d74293f675038f49a26e7536d61a1f35b0b8b16a87b1d6f977bedc898eedfab3
   languageName: node
   linkType: hard
 
@@ -2722,7 +2711,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20":
+"@types/node@npm:20.17.30":
   version: 20.17.30
   resolution: "@types/node@npm:20.17.30"
   dependencies:
@@ -3458,7 +3447,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bunchee@npm:^6.4.0":
+"bunchee@npm:^6.5.0":
   version: 6.5.0
   resolution: "bunchee@npm:6.5.0"
   dependencies:
@@ -4848,18 +4837,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^9.2.0":
-  version: 9.3.5
-  resolution: "glob@npm:9.3.5"
-  dependencies:
-    fs.realpath: "npm:^1.0.0"
-    minimatch: "npm:^8.0.2"
-    minipass: "npm:^4.2.4"
-    path-scurry: "npm:^1.6.1"
-  checksum: 10/e5fa8a58adf53525bca42d82a1fad9e6800032b7e4d372209b80cfdca524dd9a7dbe7d01a92d7ed20d89c572457f12c250092bc8817cb4f1c63efefdf9b658c0
-  languageName: node
-  linkType: hard
-
 "globals@npm:^11.1.0":
   version: 11.12.0
   resolution: "globals@npm:11.12.0"
@@ -5472,7 +5449,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"isbot@npm:*, isbot@npm:^5":
+"isbot@npm:*, isbot@npm:^5.1.25":
   version: 5.1.25
   resolution: "isbot@npm:5.1.25"
   checksum: 10/4f8a309fd4edda99b2683298f38661cf9c12abbf8e80a988875439969456f78424f4691cef98c42e9fd2f21a084fa592bf818527fc3188dabef0ddb6b8ec16cc
@@ -5995,15 +5972,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^8.0.2":
-  version: 8.0.4
-  resolution: "minimatch@npm:8.0.4"
-  dependencies:
-    brace-expansion: "npm:^2.0.1"
-  checksum: 10/aef05598ee565e1013bc8a10f53410ac681561f901c1a084b8ecfd016c9ed919f58f4bbd5b63e05643189dfb26e8106a84f0e1ff12e4a263aa37e1cae7ce9828
-  languageName: node
-  linkType: hard
-
 "minimatch@npm:^9.0.4, minimatch@npm:^9.0.5":
   version: 9.0.5
   resolution: "minimatch@npm:9.0.5"
@@ -6080,7 +6048,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minipass@npm:^4.0.0, minipass@npm:^4.2.4":
+"minipass@npm:^4.0.0":
   version: 4.2.8
   resolution: "minipass@npm:4.2.8"
   checksum: 10/e148eb6dcb85c980234cad889139ef8ddf9d5bdac534f4f0268446c8792dd4c74f4502479be48de3c1cce2f6450f6da4d0d4a86405a8a12be04c1c36b339569a
@@ -6672,7 +6640,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"path-scurry@npm:^1.11.1, path-scurry@npm:^1.6.1":
+"path-scurry@npm:^1.11.1":
   version: 1.11.1
   resolution: "path-scurry@npm:1.11.1"
   dependencies:
@@ -6998,17 +6966,17 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "react-router-relay@workspace:packages/react-router-relay"
   dependencies:
-    "@types/node": "npm:20"
+    "@types/node": "npm:20.17.30"
     "@types/react": "npm:^19.1.0"
     "@types/react-relay": "npm:^18.2.0"
     "@types/relay-runtime": "npm:^18.2.5"
-    bunchee: "npm:^6.4.0"
+    bunchee: "npm:^6.5.0"
     react: "npm:^19.1.0"
     react-relay: "npm:^18.2.0"
     react-router: "npm:^7.5.0"
     relay-runtime: "npm:^18.2.0"
-    rimraf: "npm:^4.4.1"
-    typescript: "npm:^5.8.2"
+    rimraf: "npm:^6.0.1"
+    typescript: "npm:^5.8.3"
   peerDependencies:
     react: ">=19"
     react-relay: ^18
@@ -7265,17 +7233,6 @@ __metadata:
   bin:
     rimraf: bin.js
   checksum: 10/063ffaccaaaca2cfd0ef3beafb12d6a03dd7ff1260d752d62a6077b5dfff6ae81bea571f655bb6b589d366930ec1bdd285d40d560c0dae9b12f125e54eb743d5
-  languageName: node
-  linkType: hard
-
-"rimraf@npm:^4.4.1":
-  version: 4.4.1
-  resolution: "rimraf@npm:4.4.1"
-  dependencies:
-    glob: "npm:^9.2.0"
-  bin:
-    rimraf: dist/cjs/src/bin.js
-  checksum: 10/218ef9122145ccce9d0a71124d36a3894537de46600b37fae7dba26ccff973251eaa98aa63c2c5855a05fa04bca7cbbd7a92d4b29f2875d2203e72530ecf6ede
   languageName: node
   linkType: hard
 
@@ -8138,23 +8095,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.8.2":
-  version: 5.8.2
-  resolution: "typescript@npm:5.8.2"
+"typescript@npm:^5.8.3":
+  version: 5.8.3
+  resolution: "typescript@npm:5.8.3"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10/dbc2168a55d56771f4d581997be52bab5cbc09734fec976cfbaabd787e61fb4c6cf9125fd48c6f98054ce549c77ecedefc7f64252a830dd8e9c3381f61fbeb78
+  checksum: 10/65c40944c51b513b0172c6710ee62e951b70af6f75d5a5da745cb7fab132c09ae27ffdf7838996e3ed603bb015dadd099006658046941bd0ba30340cc563ae92
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^5.8.2#optional!builtin<compat/typescript>":
-  version: 5.8.2
-  resolution: "typescript@patch:typescript@npm%3A5.8.2#optional!builtin<compat/typescript>::version=5.8.2&hash=5786d5"
+"typescript@patch:typescript@npm%3A^5.8.3#optional!builtin<compat/typescript>":
+  version: 5.8.3
+  resolution: "typescript@patch:typescript@npm%3A5.8.3#optional!builtin<compat/typescript>::version=5.8.3&hash=5786d5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10/97920a082ffc57583b1cb6bc4faa502acc156358e03f54c7fc7fdf0b61c439a717f4c9070c449ee9ee683d4cfc3bb203127c2b9794b2950f66d9d307a4ff262c
+  checksum: 10/b9b1e73dabac5dc730c041325dbd9c99467c1b0d239f1b74ec3b90d831384af3e2ba973946232df670519147eb51a2c20f6f96163cea2b359f03de1e2091cc4f
   languageName: node
   linkType: hard
 
