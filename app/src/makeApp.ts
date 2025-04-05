@@ -1,38 +1,28 @@
 import path from "node:path";
-import FastifyAutoLoad from "@fastify/autoload";
-import FastifyCors from "@fastify/cors";
-import Fastify from "fastify";
+import fastifyAutoload from "@fastify/autoload";
+import fastify from "fastify";
 
 export async function makeApp() {
   /**
-   * Setup Fastify and Plugins
+   * Setup Fastify
    */
-  const app = Fastify();
+  const app = fastify();
 
   /**
-   * Setup CORS
+   * Setup Plugins
    */
-  await app.register(FastifyCors, {
-    preflightContinue: true,
+  await app.register(fastifyAutoload, {
+    dir: path.resolve("./src/plugins"),
+    ignorePattern: /\.spec\.ts$/,
+    maxDepth: 1,
   });
 
   /**
    * Setup Plugins
    */
-  await app.register(FastifyAutoLoad, {
-    dir: path.resolve("./src/plugins"),
-    maxDepth: 1,
-  });
-
-  /**
-   * Health Check Endpoint
-   */
-  app.route({
-    handler: () => ({
-      ok: true,
-    }),
-    method: "GET",
-    url: "/healthz",
+  await app.register(fastifyAutoload, {
+    dir: path.resolve("./src/routes"),
+    ignorePattern: /\.spec\.ts$/,
   });
 
   /**

@@ -9,7 +9,8 @@
     "codegen": "graphql-codegen",
     "dev": "NODE_ENV=development node --loader extensionless --experimental-strip-types --watch-path=./src ./src/index.ts | yarn pino-pretty --singleLine",
     "start": "NODE_ENV=production node --loader extensionless --experimental-strip-types ./src/index.ts",
-    "test": "vitest run ./src -c ./vite.config.test.mjs"
+    "test": "NODE_ENV=production vitest run ./src -c ./vite.config.test.mjs",
+    "test:watch": "NODE_ENV=production vitest run ./src -c ./vite.config.test.mjs --watch"
   },
   "dependencies": {
     "@fastify/autoload": "^6.2.0",
