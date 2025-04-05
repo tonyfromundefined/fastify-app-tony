@@ -1026,6 +1026,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@fastify-app-tony/app@workspace:app"
   dependencies:
+    "@envelop/core": "npm:^5.2.3"
     "@envelop/graphql-modules": "npm:^7.1.3"
     "@fastify/autoload": "npm:^6.2.0"
     "@fastify/cookie": "npm:^11.0.2"
@@ -1064,6 +1065,7 @@ __metadata:
     graphql: "npm:^16.10.0"
     graphql-codegen-typescript-resolvers-define: "npm:^0.3.0"
     graphql-modules: "patch:graphql-modules@npm%3A3.0.0#~/.yarn/patches/graphql-modules-npm-3.0.0-27f60c3f79.patch"
+    graphql-sock: "npm:^1.0.1"
     graphql-yoga: "npm:^5.13.2"
     isbot: "npm:^5"
     nodemon: "npm:^3.1.9"
@@ -4966,6 +4968,18 @@ __metadata:
   peerDependencies:
     graphql: 14 - 16
   checksum: 10/a9c6f2eeaad972cdecb91437c15c785a282263fd0ef36f6fc5648e0945da488cdc10ab4736891ee1fbb928c7bf6e0bc8e0284df514254adefe02cc406ba5fce5
+  languageName: node
+  linkType: hard
+
+"graphql-sock@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "graphql-sock@npm:1.0.1"
+  peerDependencies:
+    graphql: 15.x || 16.x || 17.x
+  bin:
+    semantic-to-nullable: dist/cli/to-nullable.js
+    semantic-to-strict: dist/cli/to-strict.js
+  checksum: 10/71c77c3edda2cfd0e54217bfadb105b0ec10eb08814144533db01a45abcbe9dca87035290491419b6134bb4ca4de9ea6306fdcf406b3d86fabbaf164f219a082
   languageName: node
   linkType: hard
 

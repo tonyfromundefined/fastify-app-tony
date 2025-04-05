@@ -12,6 +12,7 @@
     "test:watch": "vitest run ./src -c ./vite.config.test.mjs --watch"
   },
   "dependencies": {
+    "@envelop/core": "^5.2.3",
     "@envelop/graphql-modules": "^7.1.3",
     "@fastify/autoload": "^6.2.0",
     "@fastify/cookie": "^11.0.2",
@@ -37,6 +38,7 @@
     "glob": "^11.0.1",
     "graphql": "^16.10.0",
     "graphql-modules": "patch:graphql-modules@npm%3A3.0.0#~/.yarn/patches/graphql-modules-npm-3.0.0-27f60c3f79.patch",
+    "graphql-sock": "^1.0.1",
     "graphql-yoga": "^5.13.2",
     "isbot": "^5",
     "react": "^19.1.0",

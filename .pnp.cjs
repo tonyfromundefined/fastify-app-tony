@@ -1319,7 +1319,7 @@ const RAW_RUNTIME_STATE =
       ["virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:7.1.3", {\
         "packageLocation": "./.yarn/__virtual__/@envelop-graphql-modules-virtual-7389b62aae/0/cache/@envelop-graphql-modules-npm-7.1.3-b2d93c9a9b-698d4e29ce.zip/node_modules/@envelop/graphql-modules/",\
         "packageDependencies": [\
-          ["@envelop/core", null],\
+          ["@envelop/core", "npm:5.2.3"],\
           ["@envelop/graphql-modules", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:7.1.3"],\
           ["@types/envelop__core", null],\
           ["@types/graphql", null],\
@@ -1590,6 +1590,7 @@ const RAW_RUNTIME_STATE =
       ["workspace:app", {\
         "packageLocation": "./app/",\
         "packageDependencies": [\
+          ["@envelop/core", "npm:5.2.3"],\
           ["@envelop/graphql-modules", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:7.1.3"],\
           ["@fastify-app-tony/app", "workspace:app"],\
           ["@fastify/autoload", "npm:6.2.0"],\
@@ -1629,6 +1630,7 @@ const RAW_RUNTIME_STATE =
           ["graphql", "npm:16.10.0"],\
           ["graphql-codegen-typescript-resolvers-define", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:0.3.0"],\
           ["graphql-modules", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#patch:graphql-modules@npm%3A3.0.0#~/.yarn/patches/graphql-modules-npm-3.0.0-27f60c3f79.patch::version=3.0.0&hash=5ab5c5"],\
+          ["graphql-sock", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:1.0.1"],\
           ["graphql-yoga", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:5.13.2"],\
           ["isbot", "npm:5.1.25"],\
           ["nodemon", "npm:3.1.9"],\
@@ -2257,7 +2259,7 @@ const RAW_RUNTIME_STATE =
           ["@types/graphql-sock", null],\
           ["auto-bind", "npm:4.0.0"],\
           ["graphql", "npm:16.10.0"],\
-          ["graphql-sock", null],\
+          ["graphql-sock", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:1.0.1"],\
           ["tslib", "npm:2.6.3"]\
         ],\
         "packagePeers": [\
@@ -6720,6 +6722,28 @@ const RAW_RUNTIME_STATE =
           ["cross-fetch", "npm:3.1.8"],\
           ["graphql", "npm:16.10.0"],\
           ["graphql-request", "virtual:255f184446817760f99c3b3d2f01dfa3b830612700cb5b2d003d8110ad2b3200cebd7a877f8c1e82e2c820738e9f5018895ffa6684ce0c41fe48f06e328f4fe2#npm:6.1.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/graphql",\
+          "graphql"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["graphql-sock", [\
+      ["npm:1.0.1", {\
+        "packageLocation": "./.yarn/cache/graphql-sock-npm-1.0.1-2da7b3ffe8-71c77c3edd.zip/node_modules/graphql-sock/",\
+        "packageDependencies": [\
+          ["graphql-sock", "npm:1.0.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:1.0.1", {\
+        "packageLocation": "./.yarn/__virtual__/graphql-sock-virtual-5807ea6c36/0/cache/graphql-sock-npm-1.0.1-2da7b3ffe8-71c77c3edd.zip/node_modules/graphql-sock/",\
+        "packageDependencies": [\
+          ["@types/graphql", null],\
+          ["graphql", "npm:16.10.0"],\
+          ["graphql-sock", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:1.0.1"]\
         ],\
         "packagePeers": [\
           "@types/graphql",\
