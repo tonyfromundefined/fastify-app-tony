@@ -33,7 +33,6 @@ Maintaining a stable development speed with fast feedback
 Separation of domain knowledge and scalability using event sourcing.
 
 - [Node.js](https://nodejs.org/)
-- [eventive](https://github.com/tonyfromundefined/eventive)
 - [Fastify](https://fastify.dev/)
 - [GraphQL](https://graphql.org/)
   - [GraphQL Yoga](https://the-guild.dev/graphql/yoga-server)
