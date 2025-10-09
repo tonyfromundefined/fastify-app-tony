@@ -27,5 +27,5 @@
     "ultra-runner": "^3.10.5",
     "vite": "^6.2.5"
   },
-  "packageManager": "yarn@4.8.1"
+  "packageManager": "yarn@4.10.3"
 }
