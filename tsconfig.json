@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     // Language and Environment
-    "target": "ES2018",
-    "lib": ["ES2018"],
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM"],
 
     // Base module configuration
     // You must set module option to "NodeNext" or "preserve" or "ESNext" when importing this file.

@@ -1631,7 +1631,6 @@ const RAW_RUNTIME_STATE =
           ["fastify", "npm:5.6.1"],\
           ["fastify-graceful-shutdown", "npm:5.0.0"],\
           ["fastify-plugin", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:5.1.0"],\
-          ["glob", "npm:11.0.3"],\
           ["graphql", "npm:16.11.0"],\
           ["graphql-codegen-typescript-resolvers-define", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#npm:0.3.0"],\
           ["graphql-modules", "virtual:449f059d7138c2e3f429fb9eaaed5e88d3bd8d5342303ac20d89ff9f755dff5135c78eafd597cf2ea99d14cf2310db679b0825a50d7e94eeab575adb0664feee#patch:graphql-modules@npm%3A3.0.0#~/.yarn/patches/graphql-modules-npm-3.0.0-27f60c3f79.patch::version=3.0.0&hash=5ab5c5"],\
