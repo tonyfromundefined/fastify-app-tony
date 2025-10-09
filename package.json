@@ -17,15 +17,15 @@
     "version": "yarn install && git stage yarn.lock"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
-    "@types/node": "^22.14.0",
-    "@types/react": "^19.1.0",
-    "concurrently": "^9.1.2",
-    "react": "^19.1.0",
+    "@biomejs/biome": "^2.2.5",
+    "@types/node": "^24.7.0",
+    "@types/react": "^19.2.2",
+    "concurrently": "^9.2.1",
+    "react": "^19.2.0",
     "relay-compiler": "^18.2.0",
-    "typescript": "^5.8.3",
+    "typescript": "^5.9.3",
     "ultra-runner": "^3.10.5",
-    "vite": "^6.2.5"
+    "vite": "^6.3.6"
   },
   "packageManager": "yarn@4.10.3"
 }
