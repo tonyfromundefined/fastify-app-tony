@@ -1,6 +1,7 @@
 import path from "node:path";
 import fastifyAutoload from "@fastify/autoload";
 import fastify from "fastify";
+import graphql from "./graphql";
 
 export async function makeApp() {
   /**
@@ -18,12 +19,17 @@ export async function makeApp() {
   });
 
   /**
-   * Setup Plugins
+   * Setup Routes
    */
   await app.register(fastifyAutoload, {
     dir: path.resolve("./src/routes"),
     ignorePattern: /\.spec\.ts$/,
   });
+
+  /**
+   * Setup GraphQL API
+   */
+  app.register(graphql);
 
   /**
    * Waiting for Fastify Plugins...

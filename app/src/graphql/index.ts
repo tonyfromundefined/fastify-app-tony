@@ -4,7 +4,7 @@ import fp from "fastify-plugin";
 import { glob } from "glob";
 import { createApplication } from "graphql-modules";
 import { createYoga } from "graphql-yoga";
-import type { Context } from "../../Context";
+import type { Context } from "../Context";
 
 export default fp(
   async (app) => {
@@ -48,9 +48,7 @@ export default fp(
 );
 
 async function loadModules() {
-  const modules = await glob(
-    path.resolve("./src/plugins/graphql/modules/*/index.ts"),
-  )
+  const modules = await glob(path.resolve("./src/graphql/modules/*/index.ts"))
     .then((ps) => Promise.all(ps.map((p) => import(p))))
     .then((ms) => ms.map((m) => m.default));
 
