@@ -20,7 +20,7 @@ export function createRelayLoaderEnvironment(
       signal: cacheConfig.metadata?.signal as AbortSignal,
     });
 
-    // biome-ignore lint/suspicious/noExplicitAny:
+    // biome-ignore lint/suspicious/noExplicitAny: fetch returns a json object
     return (await response.json()) as Promise<any>;
   });
 

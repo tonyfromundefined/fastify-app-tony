@@ -1,7 +1,14 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
-  "organizeImports": {
-    "enabled": true
+  "$schema": "https://biomejs.dev/schemas/2.2.5/schema.json",
+  "vcs": {
+    "enabled": false,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "indentWidth": 2
   },
   "linter": {
     "enabled": true,
@@ -12,26 +19,35 @@
       }
     }
   },
-  "formatter": {
-    "indentStyle": "space",
-    "indentWidth": 2
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double"
+    }
   },
-  "vcs": {
+  "assist": {
     "enabled": true,
-    "clientKind": "git",
-    "useIgnoreFile": true
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
   },
   "files": {
-    "ignore": [
-      ".pnp.cjs",
-      ".pnp.loader.mjs",
-      ".vscode/**",
-      ".yarn/**",
-      ".ultra.cache.json",
-      "package.json",
-      "node_modules/**",
-      "coverage/**",
-      "__generated__/**"
+    "includes": [
+      "**",
+      "!.yarn",
+      "!.git",
+      "!.vscode",
+      "!.pnp.cjs",
+      "!.pnp.loader.mjs",
+      "!**/.react-router",
+      "!**/.react-router/types",
+      "!**/node_modules",
+      "!**/dist",
+      "!**/coverage",
+      "!**/__generated__",
+      "!**/.ultra.cache.json",
+      "!**/package.json"
     ]
   }
 }

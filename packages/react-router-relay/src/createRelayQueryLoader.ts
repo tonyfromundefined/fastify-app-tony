@@ -3,7 +3,7 @@ import type { LoaderFunctionArgs } from "react-router";
 import type { GraphQLTaggedNode, OperationType } from "relay-runtime";
 import { createRelayLoaderEnvironment } from "./createRelayLoaderEnvironment";
 
-// biome-ignore lint/suspicious/noExplicitAny:
+// biome-ignore lint/suspicious/noExplicitAny: the arguments are dynamic
 export type RelayQueryLoaderArgs<Query extends OperationType, Context = any> = {
   query: GraphQLTaggedNode;
   variables?: (
@@ -20,7 +20,7 @@ interface CreateRelayQueryLoaderInput {
   url: string;
 }
 
-// biome-ignore lint/suspicious/noExplicitAny:
+// biome-ignore lint/suspicious/noExplicitAny: the context is dynamic
 export function createRelayQueryLoader<Context = any>(
   input: CreateRelayQueryLoaderInput,
 ) {
