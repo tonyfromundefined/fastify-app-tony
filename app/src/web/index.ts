@@ -17,7 +17,7 @@ declare module "react-router" {
 export default fp(
   async (app) => {
     await app.register(reactRouterFastify, {
-      buildDirectory: "./dist/plugins/web",
+      buildDirectory: "./dist/web",
       async getLoadContext(req) {
         return { app, req };
       },

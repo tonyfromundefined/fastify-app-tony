@@ -17,7 +17,7 @@
     "ignore": [
       "dist/**",
       "node_modules/**",
-      "src/plugins/web/**"
+      "src/web/**"
     ],
     "watch": "src"
   },
